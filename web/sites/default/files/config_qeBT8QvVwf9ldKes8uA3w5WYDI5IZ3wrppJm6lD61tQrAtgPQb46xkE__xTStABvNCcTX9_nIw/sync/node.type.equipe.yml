@@ -1,0 +1,18 @@
+uuid: 9127e824-1ab6-416d-a3d1-c8758b4c7bec
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Équipe
+type: equipe
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

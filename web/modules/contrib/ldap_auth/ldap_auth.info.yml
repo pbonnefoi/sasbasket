@@ -1,0 +1,25 @@
+name: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login'
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+description: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login.'
+configure: ldap_auth.ldap_config
+# Information added by Drupal.org packaging script on 2021-01-12
+# version: '8.x-1.21'
+# project: 'ldap_auth'
+# datestamp: 1610494654
+
+# Information added by Drupal.org packaging script on 2021-02-05
+# version: '8.x-1.23'
+# project: 'ldap_auth'
+# datestamp: 1612511572
+
+# Information added by Drupal.org packaging script on 2021-04-12
+# version: '8.x-1.24'
+# project: 'ldap_auth'
+# datestamp: 1618207012
+
+# Information added by Drupal.org packaging script on 2021-07-12
+version: '8.x-1.25'
+project: 'ldap_auth'
+datestamp: 1626089744

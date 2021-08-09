@@ -1,0 +1,20 @@
+uuid: aed7b623-8c6b-4789-9591-14338c3b08e8
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - sas_basket
+_core:
+  default_config_hash: vKDVSFwHMcXw-AbHhOcynvv3NSyQWNLZPS605mARwDw
+id: sas_basket_page_title
+theme: sas_basket
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,17 @@
+ldap_auth.admin:
+  version: VERSION
+  css:
+    layout:
+      css/ldap_auth.admin.css: {}
+
+ldap_auth.style_settings:
+  version: VERSION
+  css:
+    layout:
+      css/ldap_auth.style_settings.css: {}
+
+ldap_auth.main:
+  version: VERSION
+  css:
+    layout:
+      css/ldap_auth.main.css: {}

@@ -1,0 +1,35 @@
+<div class="container">
+    {% for gymnase in creneaux %}
+        <section class="section m-5">
+            <h2 class="is-size-2 is-italic is-uppercase has-text-primary">{{ gymnase.name }}</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th><abbr class=" is-uppercase" title="Lundi">Lundi</abbr></th>
+                    <th><abbr class=" is-uppercase" title="Mardi">Mardi</abbr></th>
+                    <th><abbr class=" is-uppercase" title="Mercredi">Mercredi</abbr></th>
+                    <th><abbr class=" is-uppercase" title="Jeudi">Jeudi</abbr></th>
+                    <th><abbr class=" is-uppercase" title="Vendredi">Vendredi</abbr></th>
+                    <th><abbr class=" is-uppercase" title="Samedi">Samedi</abbr></th>
+                    <th><abbr class=" is-uppercase" title="Dimanche">Dimanche</abbr></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    {% for day in gymnase.creneaux %}
+                        <td>
+                            {% for creneau in day %}
+                                <div class="notification is-primary m-1">
+                                    <p class="is-5 is-italic is-uppercase has-text-gold">{{ creneau.name }}</p>
+                                    <p class="has-text-white">{{ creneau.start }} - {{ creneau.end }}</p>
+                                </div>
+                            {% endfor %}
+                        </td>
+                    {% endfor %}
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    {% endfor %}
+</div>
+

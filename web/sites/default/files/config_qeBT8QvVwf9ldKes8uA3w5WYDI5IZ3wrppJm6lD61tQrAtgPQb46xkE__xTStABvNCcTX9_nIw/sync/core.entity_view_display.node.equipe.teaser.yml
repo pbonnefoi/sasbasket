@@ -1,0 +1,33 @@
+uuid: da4717ed-57b5-4d25-ad0d-c51bf7e279c5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.equipe.body
+    - field.field.node.equipe.field_entraineur
+    - node.type.equipe
+  module:
+    - text
+    - user
+id: node.equipe.teaser
+targetEntityType: node
+bundle: equipe
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_entraineur: true
+  langcode: true

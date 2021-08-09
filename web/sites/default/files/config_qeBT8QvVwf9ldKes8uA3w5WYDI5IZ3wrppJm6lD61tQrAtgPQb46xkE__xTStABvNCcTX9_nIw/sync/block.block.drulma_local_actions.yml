@@ -1,0 +1,20 @@
+uuid: 124249fc-bb9c-458c-8f25-fc634c91d0b3
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - drulma
+_core:
+  default_config_hash: 0mFXUmiBDh5ljyp5kLSnDlagjct6mGEKZn0SOAJcVQ0
+id: drulma_local_actions
+theme: drulma
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,7 @@
+sas_basket_commons.planning:
+  path: '/plannings'
+  defaults:
+    _controller: '\Drupal\sas_basket_commons\Controller\PlanningsController::callback'
+    _title: 'Plannings'
+  requirements:
+    _permission: 'access content'

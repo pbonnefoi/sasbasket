@@ -1,0 +1,10 @@
+uuid: 893c5f41-64c3-4dcf-9619-ab3d46e0ba16
+langcode: fr
+status: true
+dependencies: {  }
+id: texte
+label: Texte
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

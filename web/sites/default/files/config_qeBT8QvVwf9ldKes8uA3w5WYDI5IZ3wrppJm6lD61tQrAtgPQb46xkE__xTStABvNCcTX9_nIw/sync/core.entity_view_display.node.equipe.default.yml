@@ -1,0 +1,38 @@
+uuid: ee0523b0-18e3-4d86-9abe-c9388fda9917
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.equipe.body
+    - field.field.node.equipe.field_entraineur
+    - node.type.equipe
+  module:
+    - text
+    - user
+id: node.equipe.default
+targetEntityType: node
+bundle: equipe
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_entraineur:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

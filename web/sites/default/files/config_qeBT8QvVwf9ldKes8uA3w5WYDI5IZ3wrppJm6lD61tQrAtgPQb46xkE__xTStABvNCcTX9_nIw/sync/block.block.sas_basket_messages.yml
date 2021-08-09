@@ -1,0 +1,22 @@
+uuid: 0bf7969f-25fa-4891-bdac-283f167ed935
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sas_basket
+_core:
+  default_config_hash: Ron5OcY_0EyL7s5mDBUiLG_9LEvcC8KIPNmv6M5uAgE
+id: sas_basket_messages
+theme: sas_basket
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

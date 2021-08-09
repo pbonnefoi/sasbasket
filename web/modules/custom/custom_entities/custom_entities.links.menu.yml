@@ -1,0 +1,28 @@
+
+# Gymnase entity menu items definition
+entity.gymnase_entity.collection:
+  title: 'Gymnase entity list'
+  route_name: entity.gymnase_entity.collection
+  description: 'List Gymnase entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+gymnase_entity.admin.structure.settings:
+  title: 'Gymnase entity settings'
+  description: 'Configure Gymnase entity entities'
+  route_name: gymnase_entity.settings
+  parent: system.admin_structure
+
+# Creneau entity menu items definition
+entity.creneau_entity.collection:
+  title: 'Creneau entity list'
+  route_name: entity.creneau_entity.collection
+  description: 'List Creneau entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+creneau_entity.admin.structure.settings:
+  title: 'Creneau entity settings'
+  description: 'Configure Creneau entity entities'
+  route_name: creneau_entity.settings
+  parent: system.admin_structure

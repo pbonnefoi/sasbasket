@@ -1,0 +1,70 @@
+
+ldap_auth.customer_setup:
+  path: /admin/config/people/ldap_auth/customer_setup
+  defaults:
+    _title: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login Configuration'
+    _form: \Drupal\ldap_auth\Form\MiniorangeLdapCustomerSetup
+  requirements:
+    _permission: 'administer site configuration'
+
+ldap_auth.ldap_config:
+  path: /admin/config/people/ldap_auth/ldap_config
+  defaults:
+    _title: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login Configuration'
+    _form: \Drupal\ldap_auth\Form\MiniorangeLDAP
+  requirements:
+    _permission: 'administer site configuration'
+
+ldap_auth.signin_settings:
+  path: /admin/config/people/ldap_auth/signin_settings
+  defaults:
+    _title: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login Configuration'
+    _form: \Drupal\ldap_auth\Form\MiniorangeGeneralSettings
+  requirements:
+    _permission: 'administer site configuration'
+
+ldap_auth.troubleshoot:
+  path: /admin/config/people/ldap_auth/troubleshoot
+  defaults:
+    _title: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login Configuration'
+    _form: \Drupal\ldap_auth\Form\MiniorangeDebug
+  requirements:
+    _permission: 'administer site configuration'
+
+ldap_auth.attribute_mapping:
+  path: /admin/config/people/ldap_auth/attribute_mapping
+  defaults:
+    _title: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login Configuration'
+    _form: \Drupal\ldap_auth\Form\AttributeMapping
+  requirements:
+    _permission: 'administer site configuration'
+
+ldap_auth.licensing:
+  path: /admin/config/people/ldap_auth/Licensing
+  defaults:
+    _title: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login Configuration'
+    _form: \Drupal\ldap_auth\Form\MiniorangeLicensing
+  requirements:
+    _permission: 'administer site configuration'
+
+ldap_auth.support:
+  path: /admin/config/people/ldap_auth/Support
+  defaults:
+    _title: 'Active Directory Integration / LDAP Integration - NTLM & Kerberos Login Configuration'
+    _form: \Drupal\ldap_auth\Form\MiniorangeSupport
+  requirements:
+    _permission: 'administer site cofiguration'
+
+ldap_auth.feedback:
+  path: /feedback
+  defaults:
+    _controller: '\Drupal\ldap_auth\Controller\miniorange_ldapController::ldap_auth_feedback_func'
+  requirements:
+    _permission: 'administer site configuration'
+
+ldap_auth.uninstall_module:
+  path: /uninstall_module
+  defaults:
+    _controller: '\Drupal\ldap_auth\Controller\miniorange_ldapController::uninst_mod'
+  requirements:
+    _permission: 'administer site configuration'

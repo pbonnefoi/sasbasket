@@ -1,0 +1,62 @@
+add gymnase entity entities:
+  title: 'Create new Gymnase entity entities'
+
+administer gymnase entity entities:
+  title: 'Administer Gymnase entity entities'
+  description: 'Allow to access the administration form to configure Gymnase entity entities.'
+  restrict access: true
+
+delete gymnase entity entities:
+  title: 'Delete Gymnase entity entities'
+
+edit gymnase entity entities:
+  title: 'Edit Gymnase entity entities'
+
+view published gymnase entity entities:
+  title: 'View published Gymnase entity entities'
+
+view unpublished gymnase entity entities:
+  title: 'View unpublished Gymnase entity entities'
+
+view all gymnase entity revisions:
+  title: 'View all Gymnase entity revisions'
+
+revert all gymnase entity revisions:
+  title: 'Revert all Gymnase entity revisions'
+  description: 'Role requires permission <em>view Gymnase entity revisions</em> and <em>edit rights</em> for gymnase entity entities in question or <em>administer gymnase entity entities</em>.'
+
+delete all gymnase entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Gymnase entity revisions</em> and <em>delete rights</em> for gymnase entity entities in question or <em>administer gymnase entity entities</em>.'
+
+add creneau entity entities:
+  title: 'Create new Creneau entity entities'
+
+administer creneau entity entities:
+  title: 'Administer Creneau entity entities'
+  description: 'Allow to access the administration form to configure Creneau entity entities.'
+  restrict access: true
+
+delete creneau entity entities:
+  title: 'Delete Creneau entity entities'
+
+edit creneau entity entities:
+  title: 'Edit Creneau entity entities'
+
+view published creneau entity entities:
+  title: 'View published Creneau entity entities'
+
+view unpublished creneau entity entities:
+  title: 'View unpublished Creneau entity entities'
+
+view all creneau entity revisions:
+  title: 'View all Creneau entity revisions'
+
+revert all creneau entity revisions:
+  title: 'Revert all Creneau entity revisions'
+  description: 'Role requires permission <em>view Creneau entity revisions</em> and <em>edit rights</em> for creneau entity entities in question or <em>administer creneau entity entities</em>.'
+
+delete all creneau entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Creneau entity revisions</em> and <em>delete rights</em> for creneau entity entities in question or <em>administer creneau entity entities</em>.'
+

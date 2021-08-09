@@ -1,0 +1,5 @@
+name: 'Custom Entities'
+type: module
+description: 'Custom Entities for SAS Basket'
+core_version_requirement: ^8.8 || ^9
+package: 'Custom'

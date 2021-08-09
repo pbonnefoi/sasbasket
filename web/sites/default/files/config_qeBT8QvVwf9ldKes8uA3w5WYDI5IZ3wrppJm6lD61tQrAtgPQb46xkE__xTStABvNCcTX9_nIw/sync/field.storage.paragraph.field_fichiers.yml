@@ -1,0 +1,23 @@
+uuid: 288a76ad-a63e-45cd-a133-ecf6acc2423a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_fichiers
+field_name: field_fichiers
+entity_type: paragraph
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

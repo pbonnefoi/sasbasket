@@ -1,0 +1,27 @@
+name: 'SAS Basket'
+core_version_requirement: ^8.8 || ^9
+description: 'A theme using Bulma: a free, open source CSS framework based on Flexbox.'
+package: 'Bulma'
+type: theme
+base theme: drulma
+
+regions:
+  primary_menu: 'Navbar'
+  header: 'Hero Header'
+  title: 'Hero body (title)'
+  secondary_menu: 'Hero footer (tabs)'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer: 'Footer'
+
+libraries:
+  - 'sas_basket/global'
+
+libraries-override:
+  # drulma
+  drulma/global: false
+  drulma/bulma: false

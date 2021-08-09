@@ -1,0 +1,20 @@
+uuid: ef8dfcf3-5bb8-4a75-9f4a-1eab1968b30f
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - drulma
+_core:
+  default_config_hash: 6geebFka70ycsYXV5UeBkdCQbjeSx_hOrPMzRxbT628
+id: drulma_page_title
+theme: drulma
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

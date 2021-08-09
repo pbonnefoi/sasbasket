@@ -1,0 +1,23 @@
+uuid: ae924bfb-2103-4ab3-8398-3ccc9e36f397
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fichier.field_fichiers
+    - paragraphs.paragraphs_type.fichier
+  module:
+    - file
+id: paragraph.fichier.default
+targetEntityType: paragraph
+bundle: fichier
+mode: default
+content:
+  field_fichiers:
+    weight: 0
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

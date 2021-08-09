@@ -1,0 +1,45 @@
+{
+    "name": "drupal/drulma",
+    "description": "Enables the use of Bulma: a free, open source CSS framework based on Flexbox.",
+    "homepage": "https://www.drupal.org/project/drulma",
+    "support": {
+        "source": "https://gitlab.com/upstreamable/drulma",
+        "issues": "https://gitlab.com/upstreamable/drulma/issues"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require-dev": {
+        "upstreamable/md-to-html": "^1.1",
+        "consolidation/robo": "^2"
+    },
+    "suggest": {
+        "drupal/drulma_companion": "Enables Bulma designed blocks and drush commnands"
+    },
+    "type": "drupal-theme",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Drulma\\": "./src/"
+        }
+    },
+    "scripts": {
+        "md-to-html": [
+            "MdToHtml\\composer\\ScriptHandler::transform"
+        ],
+        "generate-readme": [
+            "@md-to-html --remove-first-line README.md README.html"
+        ],
+        "generate-docs": [
+            "@md-to-html --remove-first-line docs docs/html"
+        ]
+    },
+    "scripts-descriptions": {
+        "generate-readme": "Generates a README.html from the README.md to use in the module page."
+    }
+}

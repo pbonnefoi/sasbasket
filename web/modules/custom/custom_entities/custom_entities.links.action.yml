@@ -1,0 +1,10 @@
+entity.gymnase_entity.add_form:
+  route_name: entity.gymnase_entity.add_form
+  title: 'Add Gymnase entity'
+  appears_on:
+    - entity.gymnase_entity.collection
+entity.creneau_entity.add_form:
+  route_name: entity.creneau_entity.add_form
+  title: 'Add Creneau entity'
+  appears_on:
+    - entity.creneau_entity.collection

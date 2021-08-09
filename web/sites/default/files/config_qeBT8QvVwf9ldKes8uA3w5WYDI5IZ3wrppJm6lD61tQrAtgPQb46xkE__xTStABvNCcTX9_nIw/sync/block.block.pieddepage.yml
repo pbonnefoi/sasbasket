@@ -1,0 +1,37 @@
+uuid: 57b098b8-d90b-4b5e-b453-de8d09f8b254
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - drulma_companion
+  theme:
+    - sas_basket
+id: pieddepage
+theme: sas_basket
+region: footer
+weight: 0
+provider: null
+plugin: 'drulma_companion_bulma_navbar_with_branding:footer'
+settings:
+  id: 'drulma_companion_bulma_navbar_with_branding:footer'
+  label: 'Pied de page'
+  provider: drulma_companion
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: 0
+  navbar_color: ''
+  navbar_title_tag: span
+  horizontally_centered: true
+  navbar_start_display: true
+  end_menu: ''
+  end_menu_level: 1
+  end_menu_depth: 0
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: false
+  site_name_size: '4'
+  site_slogan_size: '6'
+visibility: {  }

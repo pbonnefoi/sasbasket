@@ -1,0 +1,12 @@
+name: Menu Item Fields
+type: module
+description: Makes the menu link content entity type fieldable.
+core_version_requirement: ^8 || ^9
+package: Menu
+dependencies:
+  - drupal:menu_link_content
+
+# Information added by Drupal.org packaging script on 2020-06-22
+version: '8.x-1.5'
+project: 'menu_item_fields'
+datestamp: 1592824506

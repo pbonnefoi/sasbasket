@@ -1,0 +1,22 @@
+uuid: e4abf925-d552-4423-b4eb-b2d3dc9070be
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drulma
+_core:
+  default_config_hash: Fzd68yEhlvUl6eIL3x5qQlaA38jF4seBbgd01bcSKXE
+id: drulma_messages
+theme: drulma
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

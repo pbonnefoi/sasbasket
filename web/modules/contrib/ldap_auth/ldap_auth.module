@@ -1,0 +1,252 @@
+<?php
+/**
+ * @file
+ * Module file for miniOrange ldap Module.
+ */
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\user\Entity\User;
+use Drupal\ldap_auth\Mo_Ldap_Auth_Response;
+use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Component\Utility\Html;
+use Drupal\ldap_auth\Utilities;
+use Drupal\ldap_auth\LDAPLOGGERS;
+use Symfony\Component\HttpFoundation\Response;
+use Drupal\Core\Url;
+
+/**
+* Implements hook_menu().
+*/
+
+function ldap_auth_form_alter(&$form,&$form_state,$form_id){
+	global $base_url;
+	$login_with_ldap = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_enable_ldap');
+	
+	if(!\Drupal::currentUser()->isAuthenticated()){
+		if ($form_id == 'user_login_block' || $form_id == 'user_login' || $form_id == 'user_login_form') {
+			if($login_with_ldap){
+				array_unshift($form['#validate'],'ldap_auth_form_alter_submit');
+			}
+		}
+	}
+}
+
+function ldap_auth_form_alter_submit(&$form, &$form_state){
+	global $base_url;
+	$username = Html::escape($_POST['name']);
+	$password = $_POST['pass'];
+	\Drupal::logger('ldap_auth')->notice('L1: Got control' );
+	$user='';
+	$email='';
+	$auth_response = ldap_login($username, $password);
+	LDAPLOGGERS::addLogger('L2: Auth Response Status: ',$auth_response->statusMessage);
+	LDAPLOGGERS::addLogger('L3: Complete Auth Response: ',$auth_response);
+	\Drupal::configFactory()->getEditable('ldap_auth.settings')->set('miniorange_ldap_drupal_login', 'Tried and Failed')->save();
+	if ($auth_response->statusMessage == 'SUCCESS'){
+		$account= user_load_by_name($username);
+		LDAPLOGGERS::addLogger('L4: Account Loaded using username: ',$username);
+		\Drupal::configFactory()->getEditable('ldap_auth.settings')->set('miniorange_ldap_drupal_login', 'Successfull Response from the Server')->save();
+		/**
+		 * loading account using email address if account is not loaded by username
+		 */
+		if (empty($account)){
+			LDAPLOGGERS::addLogger('L5: Trying to load account in Drupal using email: ');
+			$account = user_load_by_mail($username);
+		}
+		if($account == null){
+			LDAPLOGGERS::addLogger('L6: Account Not Found');
+				$form_state->setErrorByName('name', t('Your user could not be created in the Drupal. <b>Please enable the Auto Create feature in your LDAP Login module or contact your administrator.</b>'));        
+				return;
+		}
+		$edit = array();
+		$edit['redirect'] = $base_url;
+		user_login_finalize($account);
+		LDAPLOGGERS::addLogger('L7: User Logged in Drupal');
+		$response = new RedirectResponse( $edit['redirect'] );
+		$request  = \Drupal::request();
+		$request->getSession()->save();
+		$response->prepare($request);
+		\Drupal::service('kernel')->terminate($request, $response);
+		$response->send();exit();
+		return new Response();
+//		$response = new RedirectResponse($edit['redirect']);
+//		$response->send();exit;
+	}
+	else if ($auth_response->statusMessage == "PHP_LDAP_EXTENSION_NOT_ENABLED") {
+		$form_state->setErrorByName('name', t('PHP LDAP extension is not installed or enabled. Please enable it.'));        
+        return;
+	}
+	else if ($auth_response->statusMessage == "LDAP_NOT_RESPONDING") {
+		$form_state->setErrorByName('name', t('It looks like your LDAP is not responding. Please contact your administrator or try after some time.'));        
+        return;
+	}
+	else if ($auth_response->statusMessage == "LDAP_ERROR"){
+		$form_state->setErrorByName('name', t('PHP LDAP extension is not installed or disabled. Please enable it.'));        
+        return;
+	}
+	else if ($auth_response->statusMessage == "CURL_ERROR"){
+		$form_state->setErrorByName('name', t('PHP cURL extension is not installed or disabled. Please enable it.'));        
+        return;
+	}
+	else if ($auth_response->statusMessage == 'OPENSSL_ERROR') {
+		$form_state->setErrorByName('name', t('PHP OpenSSL extension is not installed or disabled. Please enable it.'));        
+        return;
+	}
+	else {
+		$uid = \Drupal::service('user.auth')->authenticate($username, $password);
+		$user = User::load($uid);
+		if(isset($user)){
+			if(!$user->hasRole('administrator')){
+				$form_state->setErrorByName('name', t('<strong>PERMISSION DENIED</strong>: In order to do login you need to either have Administrator permission or should be an Adminstrator.'));
+				return;
+			}
+		} 
+		else{
+			$form_state->setErrorByName('name', t('Invalid username or incorrect password. Please try again.'));
+			return;
+		}
+	}
+}
+
+function ldap_login($username, $password){
+	LDAPLOGGERS::addLogger('L11: Entered ldap_login');
+	$authStatus = null;
+	if(!Utilities::isLDAPInstalled()){
+		LDAPLOGGERS::addLogger('L12: PHP_LDAP Extension Not Enabled');
+		$auth_response = new Mo_Ldap_Auth_Response();
+		$auth_response->status = false;
+		$auth_response->statusMessage = 'PHP_LDAP_EXTENSION_NOT_ENABLED';
+		$auth_response->userDn = '';
+		return $auth_response;
+	}
+	$ldapconn = getConnection();
+	LDAPLOGGERS::addLogger('L14: ldapconn: ',$ldapconn);
+	if ($ldapconn){
+		$search_filter = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_username_attribute');
+		$value_filter = '(&(objectClass=*)(' . $search_filter . '=?))';
+		LDAPLOGGERS::addLogger('L15: Complete Search Filter: ',$value_filter);
+		$search_bases = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_search_base');
+		
+		if($search_bases == 'custom_base')
+            $search_bases = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_custom_sb_attribute');
+		LDAPLOGGERS::addLogger('L16: Search base: ',$search_bases);  
+		$ldap_bind_dn = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_server_account_username');
+		$ldap_bind_password = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_server_account_password');
+		$filter = str_replace('?', $username, $value_filter);        //substituting username in the final search filter
+		$user_search_result = null;
+		$entry = null;
+		$info = null;
+		if(\Drupal::config('ldap_auth.settings')->get('miniorange_ldap_enable_tls') != '')
+			ldap_start_tls($ldapconn);                                				// For TLS connections
+  		$bind = @ldap_bind($ldapconn, $ldap_bind_dn, $ldap_bind_password); 			// Anonymous binding with LDAP server. Used to ensure that the LDAP Server is reachable
+		LDAPLOGGERS::addLogger('L17: LDAP Bind: ',$bind);
+		$err = ldap_error($ldapconn);
+		LDAPLOGGERS::addLogger('L18: LDAP Bind Error: ',$err);
+		if(strtolower($err) != 'success'){
+			LDAPLOGGERS::addLogger('L19: LDAP Bind Not Successful ');
+			$auth_response = new Mo_Ldap_Auth_Response();
+			$auth_response->status = false;
+			$auth_response->statusMessage = 'LDAP_NOT_RESPONDING';
+			$auth_response->userDn = '';
+			return $auth_response;
+		}
+		if(ldap_search($ldapconn, $search_bases, $filter)){
+			$user_search_result = ldap_search($ldapconn, $search_bases,$filter); 	 //Searching users from the LDAP Server
+			//LDAPLOGGERS::addLogger('L20: Got User Search Results ',$user_search_result);
+		}
+		else{
+			LDAPLOGGERS::addLogger('L21: User Search Results Not Found ');
+			$err = ldap_error($ldapconn);
+			LDAPLOGGERS::addLogger('L22: Error during User Search Results ',$err);
+			$auth_response = new Mo_Ldap_Auth_Response();
+			$auth_response->status = false;
+			$auth_response->statusMessage = 'USER_NOT_EXIST';
+			$auth_response->userDn = '';
+			return $auth_response;
+		}
+		$info = ldap_first_entry($ldapconn, $user_search_result);                      //Getting the first data entry
+		LDAPLOGGERS::addLogger('L23: Info i.e. first data entry: ',$info);
+		$entry = ldap_get_entries($ldapconn, $user_search_result);
+		if($info){
+			$userDn = ldap_get_dn($ldapconn, $info);
+			LDAPLOGGERS::addLogger('L25: UserDn: ',$userDn); 									//Get user's Distinguished Name(DN)
+		}
+		else{
+			LDAPLOGGERS::addLogger('L26: User Does Not Exist as UserDn not found: ');
+			$auth_response = new Mo_Ldap_Auth_Response();
+			$auth_response->status = false;
+			$auth_response->statusMessage = 'USER_NOT_EXIST';
+			$auth_response->userDn = '';
+			return $auth_response;
+		}
+		$authentication_response = authenticate($userDn, $password);
+		LDAPLOGGERS::addLogger('L31: authentication_response: ',$authentication_response);
+		LDAPLOGGERS::addLogger('L32: authentication_response status message: ',$authentication_response->statusMessage);
+		if($authentication_response->statusMessage == 'SUCCESS'){
+			$attributes_array = array();
+			$profile_attributes = array();
+			$authentication_response->attributeList = $attributes_array;
+		}
+		return $authentication_response;
+	}
+	else{
+		LDAPLOGGERS::addLogger('L33: Invalid LDAP Server');
+		print_r("It seems that the LDAP server you saved is not correct.");exit;
+		$auth_response = new Mo_Ldap_Auth_Response();
+		$auth_response->status = false;
+		$auth_response->statusMessage = 'ERROR';
+		$auth_response->userDn = '';
+		return $auth_response;
+	}
+}
+
+/**
+ * Used to establish a connection with the LDAP Server
+ */
+function getConnection(){
+	LDAPLOGGERS::addLogger('L13: Entered getConnection function');
+	$server_name = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_server');
+	$ldaprdn = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_server_account_username');
+	$ldappass = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_server_account_password');
+	$ldapconn = ldap_connect($server_name);
+	if ( version_compare(PHP_VERSION, '5.3.0') >= 0 ) {
+		ldap_set_option($ldapconn, LDAP_OPT_NETWORK_TIMEOUT, 5);
+	}
+	ldap_set_option($ldapconn, LDAP_OPT_PROTOCOL_VERSION, 3);
+	ldap_set_option($ldapconn, LDAP_OPT_REFERRALS, 0);
+	return $ldapconn;
+}
+
+/**
+ * Function used to authenticate the user from LDAP Server
+ */
+function authenticate($userDn, $password){
+	LDAPLOGGERS::addLogger('L27: Entered Authenticate function ');
+	$server_name = \Drupal::config('ldap_auth.settings')->get('miniorange_ldap_server');
+	$ldapconn = ldap_connect($server_name);
+	LDAPLOGGERS::addLogger('L28: ldapconn: ',$ldapconn);
+	if ( version_compare(PHP_VERSION, '5.3.0') >= 0 ) {
+		ldap_set_option(null, LDAP_OPT_NETWORK_TIMEOUT, 5);
+	}
+	ldap_set_option($ldapconn, LDAP_OPT_PROTOCOL_VERSION, 3);
+	ldap_set_option($ldapconn, LDAP_OPT_REFERRALS, 0);
+	// binding to ldap server
+	if(\Drupal::config('ldap_auth.settings')->get('miniorange_ldap_enable_tls'))
+		ldap_start_tls($ldapconn);
+	$ldapbind = @ldap_bind($ldapconn, $userDn, $password);
+	LDAPLOGGERS::addLogger('L29: ldapbind: ',$ldapbind);
+	// verify binding
+	if ($ldapbind){
+		$auth_response = new Mo_Ldap_Auth_Response();
+		$auth_response->status = true;
+		$auth_response->statusMessage = 'SUCCESS';
+		$auth_response->userDn = $userDn;
+		return $auth_response;
+	}
+	LDAPLOGGERS::addLogger('L30: ldapbind not successfuly: ');
+	
+	$auth_response = new Mo_Ldap_Auth_Response();
+	$auth_response->status = false;
+	$auth_response->statusMessage = 'ERROR';
+	$auth_response->userDn = $userDn;
+	return $auth_response;
+}

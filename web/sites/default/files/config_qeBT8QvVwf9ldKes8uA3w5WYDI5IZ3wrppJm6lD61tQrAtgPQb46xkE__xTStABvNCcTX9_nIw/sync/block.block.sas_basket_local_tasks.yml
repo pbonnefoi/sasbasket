@@ -1,0 +1,22 @@
+uuid: 4307af16-d519-4201-a63c-1c50f5f1ff7f
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - sas_basket
+_core:
+  default_config_hash: igXl1RwWLK2KijmB1eu6sT8BVJcxQqwbbKcI91DVZc8
+id: sas_basket_local_tasks
+theme: sas_basket
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

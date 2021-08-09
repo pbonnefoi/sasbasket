@@ -1,0 +1,52 @@
+# Gymnase entity routing definition
+gymnase_entity.settings_tab:
+  route_name: gymnase_entity.settings
+  title: 'Settings'
+  base_route: gymnase_entity.settings
+
+entity.gymnase_entity.canonical:
+  route_name: entity.gymnase_entity.canonical
+  base_route: entity.gymnase_entity.canonical
+  title: 'View'
+
+entity.gymnase_entity.edit_form:
+  route_name: entity.gymnase_entity.edit_form
+  base_route: entity.gymnase_entity.canonical
+  title: 'Edit'
+
+entity.gymnase_entity.version_history:
+  route_name: entity.gymnase_entity.version_history
+  base_route: entity.gymnase_entity.canonical
+  title: 'Revisions'
+
+entity.gymnase_entity.delete_form:
+  route_name:  entity.gymnase_entity.delete_form
+  base_route:  entity.gymnase_entity.canonical
+  title: Delete
+  weight: 10
+# Creneau entity routing definition
+creneau_entity.settings_tab:
+  route_name: creneau_entity.settings
+  title: 'Settings'
+  base_route: creneau_entity.settings
+
+entity.creneau_entity.canonical:
+  route_name: entity.creneau_entity.canonical
+  base_route: entity.creneau_entity.canonical
+  title: 'View'
+
+entity.creneau_entity.edit_form:
+  route_name: entity.creneau_entity.edit_form
+  base_route: entity.creneau_entity.canonical
+  title: 'Edit'
+
+entity.creneau_entity.version_history:
+  route_name: entity.creneau_entity.version_history
+  base_route: entity.creneau_entity.canonical
+  title: 'Revisions'
+
+entity.creneau_entity.delete_form:
+  route_name:  entity.creneau_entity.delete_form
+  base_route:  entity.creneau_entity.canonical
+  title: Delete
+  weight: 10

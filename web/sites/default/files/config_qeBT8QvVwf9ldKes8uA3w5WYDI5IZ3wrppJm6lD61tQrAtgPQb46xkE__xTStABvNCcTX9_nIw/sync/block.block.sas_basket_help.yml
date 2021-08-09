@@ -1,0 +1,22 @@
+uuid: 1a0e5894-3fb5-4315-b70e-94fe04495769
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sas_basket
+_core:
+  default_config_hash: FJJ2r0bw42DqHL5Q2FufIbCe31Z-THwXZURQ-M0i87s
+id: sas_basket_help
+theme: sas_basket
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

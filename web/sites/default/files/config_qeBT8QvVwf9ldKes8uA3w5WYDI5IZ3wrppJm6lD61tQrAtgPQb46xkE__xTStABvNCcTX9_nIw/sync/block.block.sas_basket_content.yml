@@ -1,0 +1,22 @@
+uuid: d356ff5a-a2bc-4a4a-b6b0-a1a04f286934
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sas_basket
+_core:
+  default_config_hash: ZdQFxp_aNkFGWiHwnq1dL4zlpO3nJayqrgx9F7q_F5c
+id: sas_basket_content
+theme: sas_basket
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SAS Basket theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function sas_basket_preprocess_html(&$variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function sas_basket_preprocess_page(&$variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function sas_basket_preprocess_node(&$variables) {
+
+}
+
+
+function sas_basket_preprocess_office_hours(&$variables) {
+  $variables = $variables;
+}
+

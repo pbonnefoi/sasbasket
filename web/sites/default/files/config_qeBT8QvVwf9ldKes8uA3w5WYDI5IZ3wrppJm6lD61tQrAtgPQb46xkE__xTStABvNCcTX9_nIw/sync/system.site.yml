@@ -1,0 +1,14 @@
+uuid: 52024e01-d855-45d0-8914-0c54d5739e78
+name: 'SAS Basket'
+mail: pierre.bonnefoi@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

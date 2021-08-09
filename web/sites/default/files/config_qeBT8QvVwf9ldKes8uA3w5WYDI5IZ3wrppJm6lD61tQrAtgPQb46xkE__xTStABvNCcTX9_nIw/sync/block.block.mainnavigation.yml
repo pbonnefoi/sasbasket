@@ -1,0 +1,37 @@
+uuid: f0218b3f-26ba-4bfe-b6ea-716aebf0a574
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - drulma_companion
+  theme:
+    - sas_basket
+id: mainnavigation
+theme: sas_basket
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'drulma_companion_bulma_navbar_with_branding:main'
+settings:
+  id: 'drulma_companion_bulma_navbar_with_branding:main'
+  label: 'Main navigation'
+  provider: drulma_companion
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: 0
+  navbar_color: primary
+  navbar_title_tag: span
+  horizontally_centered: true
+  navbar_start_display: false
+  end_menu: main
+  end_menu_level: 1
+  end_menu_depth: 0
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+  site_name_size: '4'
+  site_slogan_size: '6'
+visibility: {  }

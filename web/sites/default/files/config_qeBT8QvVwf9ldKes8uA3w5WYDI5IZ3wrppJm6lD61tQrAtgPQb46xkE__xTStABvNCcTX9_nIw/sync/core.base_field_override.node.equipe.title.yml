@@ -1,0 +1,18 @@
+uuid: 4e18c02f-f9bd-4ee8-8d5c-254a4dc5b13a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.equipe
+id: node.equipe.title
+field_name: title
+entity_type: node
+bundle: equipe
+label: 'Nom de l''équipe'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: 6113ad67-3a8f-4e61-b67c-145a22ec1f88
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fichier.field_fichiers
+    - paragraphs.paragraphs_type.fichier
+  module:
+    - file
+id: paragraph.fichier.default
+targetEntityType: paragraph
+bundle: fichier
+mode: default
+content:
+  field_fichiers:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  status: true

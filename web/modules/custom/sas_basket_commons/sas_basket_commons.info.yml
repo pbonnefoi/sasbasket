@@ -1,0 +1,5 @@
+name: 'SAS Basket Commons'
+type: module
+description: 'Common functions for SAS Basket'
+core_version_requirement: ^8.8 || ^9
+package: 'Custom'
