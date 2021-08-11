@@ -1,0 +1,19 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function custom_entities_theme() {
+
+  $theme = [
+    'creneau_entity' => [
+      'render element' => 'elements',
+      'file' => 'creneau_entity.page.inc',
+    ],
+    'gymnase_entity' => [
+      'render element' => 'elements',
+      'file' => 'gymnase_entity.page.inc',
+    ],
+  ];
+
+  return $theme;
+}

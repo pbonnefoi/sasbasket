@@ -5,7 +5,7 @@
 .navbar {
   max-height: 5rem; }
   .navbar .navbar-brand .navbar-item:hover {
-    background-color: transparent; }
+    background-color: transparent !important; }
   .navbar .navbar-brand .navbar-item.site-logo {
     height: 10rem;
     margin-top: -3rem; }
@@ -23,16 +23,55 @@
       .navbar .navbar-menu .navbar-item:hover {
         background-color: #EB6324; }
 
-.hero.is-primary .hero-foot .tabs .container {
-  padding-left: 9em; }
-
-.hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current).is-active {
-  color: #225F3B; }
+.hero {
+  margin: 1.5rem 0; }
+  .hero.is-primary .hero-foot .tabs .container {
+    padding-left: 9em; }
+  .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current).is-active {
+    color: #D8B665; }
+  .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .hero.is-primary .hero.is-primary strong {
+    color: #D8B665 !important; }
 
 .has-text-gold {
-  color: #D8B665; }
+  color: #D8B665 !important; }
   .has-text-gold:hover {
     color: #FFFFFF; }
+
+h1 {
+  margin-top: 1rem; }
+
+.table {
+  table-layout: fixed; }
+
+#block-sas-basket-tabs {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #225F3B;
+  border-radius: 4px 4px 0 0; }
+
+.tooltip--triangle:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+  border-bottom: solid 5px grey;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-50%) translateY(-2px);
+  top: 1.1em;
+  left: 50%;
+  transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  z-index: 3; }
+
+.tooltip--triangle:hover:before {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0); }
 
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
@@ -2199,8 +2238,8 @@ a.box:active {
     height: 2rem;
     width: 2rem; }
   .icon.is-large {
-    height: 3rem;
-    width: 3rem; }
+    height: 5rem;
+    width: 5rem; }
 
 .image {
   display: block;
@@ -2285,7 +2324,7 @@ a.box:active {
 .notification {
   background-color: whitesmoke;
   border-radius: 4px;
-  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+  padding: 0.75rem;
   position: relative; }
   .notification a:not(.button):not(.dropdown-item) {
     color: currentColor;
@@ -6981,7 +7020,7 @@ label.panel-block {
   padding: 3rem 1.5rem; }
 
 .section {
-  padding: 3rem 1.5rem; }
+  padding: 1.75rem; }
   @media screen and (min-width: 1024px) {
     .section.is-medium {
       padding: 9rem 1.5rem; }

@@ -72,8 +72,7 @@
  * @ingroup themeable
  */
 #}
-<article class="content">
-
+<article>
   {{ title_prefix }}
   {% if label and not page %}
     <h2 class="is-size-2 is-italic is-uppercase has-text-primary">
@@ -81,7 +80,19 @@
     </h2>
   {% endif %}
   {{ title_suffix }}
-
+  <div class="hero">
+    <figure class="image is-3by1">
+      {% set cover = node.field_image[0].entity.uri.value %}
+      <img src="{{ file_url(cover|image_style('1440x480')) }}" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="container">
+    <section class="section">
+      <div class="content">
+        {{ content }}
+      </div>
+    </section>
+  </div>
   {% if display_submitted %}
     <footer>
       {{ author_picture }}
@@ -91,9 +102,5 @@
       </div>
     </footer>
   {% endif %}
-
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
 
 </article>

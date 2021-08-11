@@ -37,7 +37,6 @@
  * @see template_preprocess_field()
  */
 #}
-<div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
 {% for item in items %}
-  <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+  {{ item.content }}
 {% endfor %}

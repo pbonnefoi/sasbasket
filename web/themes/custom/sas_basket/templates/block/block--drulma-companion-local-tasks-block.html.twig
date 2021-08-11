@@ -14,14 +14,6 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {% if configuration.horizontally_centered %}
-      <div class="container">
-    {% endif %}
-
     {{ content }}
-
-    {% if configuration.horizontally_centered %}
-      </div>
-    {% endif %}
   {% endblock %}
 </nav>

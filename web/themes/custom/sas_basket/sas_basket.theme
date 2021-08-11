@@ -28,6 +28,31 @@ function sas_basket_preprocess_node(&$variables) {
 
 
 function sas_basket_preprocess_office_hours(&$variables) {
-  $variables = $variables;
+  foreach ($variables['office_hours'] as $keya => $creneau) {
+    $variables['office_hours'][$keya]['weekday_name'] = t(jddayofweek($keya, 1));
+    foreach ($creneau['slots'] as $keyb => $slot) {
+      $start = substr_replace($slot['start'], 'H', 2, 0);
+      $end = substr_replace($slot['end'], 'H', 2, 0);
+      $variables['office_hours'][$keya]['slots'][$keyb]['formatted_slot'] = $start . '-' . $end;
+    }
+  }
 }
 
+/**
+ * Preprocess video iframes.
+ *
+ * For video providers that use the "video_embed_iframe" element, you can
+ * preprocess the element to access the individual components which make up the
+ * iframe including:
+ *  - url: The URL of the iframe, excluding the query parameters.
+ *  - query: Individually manipulatable query string parameters.
+ *  - attributes: The attributes on the iframe HTML element.
+ *  - provider: The provider which has rendered the iframe, available for
+ *    conditional logic only, should not be changed.
+ */
+function sas_basket_preprocess_video_embed_iframe__youtube(&$variables) {
+  // Add a class to all iframes that point to vimeo.
+  if ($variables['provider'] == 'youtube') {
+    $variables['attributes']['class'][] = 'has-ratio';
+  }
+}

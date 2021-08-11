@@ -15,8 +15,4 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes.addClass('gymnase_entity') }}>
-  {% if content %}
-    {{- content -}}
-  {% endif %}
-</div>
+<p class="tooltip--triangle" data-tooltip="{{ content.field_adresse }}">{{ content.name }}</p>

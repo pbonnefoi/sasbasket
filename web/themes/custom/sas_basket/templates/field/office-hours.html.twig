@@ -1,23 +1,13 @@
 <div class="office-hours">
-  {% for key, item in items %}
-    {% if office_hours[key].closed is null %}
-      <div class="office-hours__item">
-        {% if item.label %}
-          <span class="office-hours__item-label notification is-uppercase is-info">{{ item.label }}</span>
-        {% endif %}
-        {% if item.slots['#markup'] is not empty %}
-          <span class="office-hours__item-slots notification">{{ item.slots }}</span>
-        {% endif %}
-        {% if item.comments['#markup'] is not empty %}
-          <span class="office-hours__item-comments">{{ item.comments }}</span>
-        {% endif %}
-        <span>{{ item_separator | raw }}</span>
-      </div>
+  {% for office_hour in office_hours %}
+    {% if office_hour.closed is null %}
+      {% for slot in office_hour.slots %}
+        <div class="office-hours__item">
+          <span class="office-hours__item-label notification is-uppercase is-info">{{ office_hour.weekday_name }}</span>
+            <span class="office-hours__item-slots notification">{{ slot.formatted_slot }}</span>
+          <span>{{ item_separator | raw }}</span>
+        </div>
+      {% endfor %}
     {% endif %}
   {% endfor %}
-  {% if schema %}
-    {% for meta in schema %}
-      <meta property="openingHours" content="{{ meta.label }}{{ meta.slots }}">
-    {% endfor %}
-  {% endif %}
 </div>

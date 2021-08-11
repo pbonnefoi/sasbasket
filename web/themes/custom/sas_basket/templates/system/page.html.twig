@@ -54,8 +54,31 @@
   {% endif %}
 </main>
 
-{% if page.footer %}
-  <footer class="footer" role="contentinfo">
-    {{ page.footer }}
-  </footer>
-{% endif %}
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="block m-3">
+      <div class="content has-text-centered">
+        <a href="https://www.facebook.com/SASbasket/?ref=br_rs">
+          <span class="icon is-large has-text-info">
+            <i class="fab fa-facebook fa-4x"></i>
+          </span>
+        </a>
+        <a href="mailto:basket.saint-avertin-sports.fr">
+          <span class="icon is-large has-text-info">
+            <i class="fas fa-envelope fa-4x"></i>
+          </span>
+        </a>
+        <a href="http://www.sasbasket.fr/">
+          <span class="icon is-large has-text-info">
+            <i class="fas fa-basketball-ball fa-4x"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="content has-text-centered">
+      <p>
+        <strong>Saint-Avertin Sport - Basket</strong> - {{ "now"|date("Y") }}.
+      </p>
+    </div>
+  </div>
+</footer>

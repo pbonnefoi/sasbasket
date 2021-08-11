@@ -25,15 +25,19 @@
  * @see template_preprocess_block()
  */
 #}
-<div class="container">
-  <section class="section">
-    {{ title_prefix }}
-    {% if label %}
-      <h2 class="is-size-2 is-italic is-uppercase has-text-primary">{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </section>
+<div class="hero is-primary">
+  <div class="container">
+    <section id="contact" class="section">
+      <div class="content is-large has-text-centered">
+        {{ title_prefix }}
+        {% if label %}
+          <h2 class="is-size-2 is-italic is-uppercase has-text-gold">{{ label }}</h2>
+        {% endif %}
+        {{ title_suffix }}
+        {% block content %}
+          {{ content }}
+        {% endblock %}
+      </div>
+    </section>
+  </div>
 </div>

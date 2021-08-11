@@ -60,15 +60,13 @@ class PlanningsController extends ControllerBase {
       ];
     }
     foreach ($creneaux as $creneau) {
-      $creneau_value = $creneau->get('field_creneau')->first();
-      if ($creneau_value instanceof OfficeHoursItem) {
-        $gymnase_id = $creneau->get('field_gymnase')->first()->getEntity()->id();
+      $creneaux_value = $creneau->get('field_creneau')->getValue();
+      foreach ($creneaux_value as $creneau_value) {
+        $gymnase_id = $creneau->get('field_gymnase')->first()->target_id;
         if ($gymnase_id) {
-          $starthour = $creneau_value->get('starthours')->getValue();
-          $start = substr_replace($starthour, 'H', 2, 0);
-          $endhour = $creneau_value->get('endhours')->getValue();
-          $end = substr_replace($endhour, 'H', 2, 0);
-          $creneaux_sorted[$gymnase_id]['creneaux'][$creneau_value->get('day')->getValue()][$starthour] = [
+          $start = substr_replace($creneau_value['starthours'], 'H', 2, 0);
+          $end = substr_replace($creneau_value['endhours'], 'H', 2, 0);
+          $creneaux_sorted[$gymnase_id]['creneaux'][$creneau_value['day']][$creneau_value['starthours']] = [
             'start' => $start,
             'end' => $end,
             'name' => $creneau->label(),

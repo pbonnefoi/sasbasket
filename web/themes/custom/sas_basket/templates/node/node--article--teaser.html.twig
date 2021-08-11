@@ -72,23 +72,25 @@
  * @ingroup themeable
  */
 #}
-<div class="column is-one-third">
-  <a href="{{ url }}">
-    <div class="card">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          {% set cover = node.field_image[0].entity.uri.value %}
-          <img src="{{ file_url(cover|image_style('1280x960')) }}" alt="Placeholder image">
-        </figure>
-      </div>
-      <div class="card-content">
+<div class="tile is-parent">
+  <div class="tile is-child">
+    <a href="{{ url }}">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            {% set cover = node.field_image[0].entity.uri.value %}
+            <img src="{{ file_url(cover|image_style('1280x960')) }}" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
 
-        <div class="content">
-          <p class="title is-4">{{ label }}</p>
-          {{ node.body.summary | slice(0, 100) }}
-          <time datetime="{{ node.changed.value | date("d-m-Y") }}">{{ date }}</time>
+          <div class="content">
+            <p class="title is-4">{{ label }}</p>
+            {{ node.body.summary | slice(0, 100) }}
+            <time datetime="{{ node.changed.value | date("d-m-Y") }}">{{ date }}</time>
+          </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>
