@@ -1,0 +1,31 @@
+add member entity entities:
+  title: 'Create new Member entity entities'
+
+administer member entity entities:
+  title: 'Administer Member entity entities'
+  description: 'Allow to access the administration form to configure Member entity entities.'
+  restrict access: true
+
+delete member entity entities:
+  title: 'Delete Member entity entities'
+
+edit member entity entities:
+  title: 'Edit Member entity entities'
+
+view published member entity entities:
+  title: 'View published Member entity entities'
+
+view unpublished member entity entities:
+  title: 'View unpublished Member entity entities'
+
+view all member entity revisions:
+  title: 'View all Member entity revisions'
+
+revert all member entity revisions:
+  title: 'Revert all Member entity revisions'
+  description: 'Role requires permission <em>view Member entity revisions</em> and <em>edit rights</em> for member entity entities in question or <em>administer member entity entities</em>.'
+
+delete all member entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Member entity revisions</em> and <em>delete rights</em> for member entity entities in question or <em>administer member entity entities</em>.'
+

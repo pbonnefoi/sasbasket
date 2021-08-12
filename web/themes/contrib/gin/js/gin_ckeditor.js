@@ -6,11 +6,16 @@
   Drupal.behaviors.ginCKEditorContextMenu = {
     attach: function attach() {
       if (window.CKEDITOR && CKEDITOR !== undefined) {
+        // If on CKEditor config, do nothing.
+        if (drupalSettings.path.currentPath.indexOf('admin/config/content/formats/manage') > -1) {
+          return;
+        }
+
         const accentCss = drupalSettings.gin.accent_css_path;
         const contentsCss = drupalSettings.gin.ckeditor_css_path;
         const accentColorPreset = drupalSettings.gin.preset_accent_color;
 
-        // Collect Gin Clases.
+        // Collect Gin classes.
         let ginClasses = new Array();
 
         if (drupalSettings.gin.darkmode) {

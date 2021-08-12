@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '80c8c8b34d1c086478b47dba17d08b83412a71f6',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -197,12 +197,12 @@
             'dev_requirement' => false,
         ),
         'doctrine/collections' => array(
-            'pretty_version' => '1.6.7',
-            'version' => '1.6.7.0',
+            'pretty_version' => '1.6.8',
+            'version' => '1.6.8.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/collections',
             'aliases' => array(),
-            'reference' => '55f8b799269a1a472457bd1a41b4f379d4cfba4a',
+            'reference' => '1958a744696c6bb3bb0d28db2611dc11610e78af',
             'dev_requirement' => false,
         ),
         'doctrine/lexer' => array(
@@ -613,6 +613,15 @@
             'reference' => '8.x-2.1',
             'dev_requirement' => false,
         ),
+        'drupal/ctools' => array(
+            'pretty_version' => '3.7.0',
+            'version' => '3.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ctools',
+            'aliases' => array(),
+            'reference' => '8.x-3.7',
+            'dev_requirement' => false,
+        ),
         'drupal/datetime' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -859,6 +868,15 @@
                 0 => '9.2.3',
             ),
         ),
+        'drupal/menu_admin_per_menu' => array(
+            'pretty_version' => '1.3.0',
+            'version' => '1.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/menu_admin_per_menu',
+            'aliases' => array(),
+            'reference' => '8.x-1.3',
+            'dev_requirement' => false,
+        ),
         'drupal/menu_item_fields' => array(
             'pretty_version' => '1.5.0',
             'version' => '1.5.0.0',
@@ -866,6 +884,15 @@
             'install_path' => __DIR__ . '/../../web/modules/contrib/menu_item_fields',
             'aliases' => array(),
             'reference' => '8.x-1.5',
+            'dev_requirement' => false,
+        ),
+        'drupal/menu_item_role_access' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/menu_item_role_access',
+            'aliases' => array(),
+            'reference' => '8.x-2.0',
             'dev_requirement' => false,
         ),
         'drupal/menu_link_content' => array(
@@ -982,6 +1009,15 @@
                 0 => '9.2.3',
             ),
         ),
+        'drupal/pathauto' => array(
+            'pretty_version' => '1.8.0',
+            'version' => '1.8.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/pathauto',
+            'aliases' => array(),
+            'reference' => '8.x-1.8',
+            'dev_requirement' => false,
+        ),
         'drupal/quickedit' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -995,12 +1031,21 @@
             ),
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '80c8c8b34d1c086478b47dba17d08b83412a71f6',
+            'dev_requirement' => false,
+        ),
+        'drupal/redirect' => array(
+            'pretty_version' => '1.6.0',
+            'version' => '1.6.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/redirect',
+            'aliases' => array(),
+            'reference' => '8.x-1.6',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -1092,6 +1137,15 @@
             'replaced' => array(
                 0 => '9.2.3',
             ),
+        ),
+        'drupal/token' => array(
+            'pretty_version' => '1.9.0',
+            'version' => '1.9.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/token',
+            'aliases' => array(),
+            'reference' => '8.x-1.9',
+            'dev_requirement' => false,
         ),
         'drupal/toolbar' => array(
             'dev_requirement' => false,

@@ -34,10 +34,6 @@ libraries-override:
       component:
         /core/themes/stable/css/core/dropbutton/dropbutton.css: /core/themes/claro/css/components/dropbutton.css
 
-  core/drupal.tabledrag:
-    js:
-      misc/tabledrag.js: /core/themes/claro/js/tabledrag.js
-
   core/drupal.vertical-tabs:
     css:
       component:
@@ -97,8 +93,6 @@ libraries-override:
 
   classy/user: false
 
-  user/drupal.user: claro/form.password-confirm
-
   field_ui/drupal.field_ui:
     css:
       theme:
@@ -138,6 +132,10 @@ libraries-override:
     js:
       js/media_library.view.js: js/overrides/gin_media_library.view.js
 
+  core/drupal.tabledrag:
+    js:
+      /core/themes/claro/js/tabledrag.js: false
+
   # Gin overrides
   core/drupal.dialog.off_canvas:
     css:
@@ -166,15 +164,13 @@ libraries-extend:
   core/drupal.collapse:
     - claro/details-focus
   core/drupal.dialog:
-    - claro/claro.drupal.dialog
+    - seven/seven.drupal.dialog
   core/drupal.dropbutton:
     - claro/dropbutton
   core/drupal.checkbox:
     - claro/checkbox
   core/drupal.message:
     - claro/messages
-  core/drupal.progress:
-    - claro/progress
   core/drupal.vertical-tabs:
     - claro/vertical-tabs
   core/jquery.ui:
@@ -194,11 +190,15 @@ libraries-extend:
   views/views.module:
     - claro/views
   media/media_embed_ckeditor_theme:
-    - claro/classy.media_embed_ckeditor_theme
+    - gin/gin_media_embed_ckeditor_theme
   media_library/view:
     - claro/media_library.theme
   media_library/widget:
     - claro/media_library.theme
+  user/drupal.user:
+    - claro/form.password-confirm
+  core/drupal.tabledrag:
+    - gin/gin_tabledrag
 
 quickedit_stylesheets:
   - ../../../core/themes/claro/css/components/quickedit.css
@@ -223,7 +223,7 @@ regions:
 regions_hidden:
   - sidebar_first
 
-# Information added by Drupal.org packaging script on 2020-09-28
-version: '8.x-3.0-alpha27'
+# Information added by Drupal.org packaging script on 2021-07-02
+version: '8.x-3.0-alpha36'
 project: 'gin'
-datestamp: 1601291422
+datestamp: 1625232224

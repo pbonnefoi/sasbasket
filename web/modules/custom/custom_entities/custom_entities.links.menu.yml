@@ -26,3 +26,17 @@ creneau_entity.admin.structure.settings:
   description: 'Configure Creneau entity entities'
   route_name: creneau_entity.settings
   parent: system.admin_structure
+
+# User entity menu items definition
+entity.user_entity.collection:
+  title: 'User entity list'
+  route_name: entity.user_entity.collection
+  description: 'List User entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+user_entity.admin.structure.settings:
+  title: 'User entity settings'
+  description: 'Configure User entity entities'
+  route_name: user_entity.settings
+  parent: system.admin_structure

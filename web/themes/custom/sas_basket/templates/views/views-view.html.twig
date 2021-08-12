@@ -37,7 +37,7 @@
     dom_id ? 'js-view-dom-id-' ~ dom_id,
   ]
 %}
-<div class="container">
+<div class="container mb-6">
   {{ title_prefix }}
   {{ title }}
   {{ title_suffix }}
@@ -50,14 +50,12 @@
 
   {{ exposed }}
   {{ attachment_before }}
-  <section class="section">
-    {% if rows -%}
-      {{ rows }}
-    {% elseif empty -%}
-      {{ empty }}
-    {% endif %}
-    {{ pager }}
-  </section>
+  {% if rows -%}
+    {{ rows }}
+  {% elseif empty -%}
+    {{ empty }}
+  {% endif %}
+  {{ pager }}
 
   {{ attachment_after }}
   {{ more }}
@@ -69,4 +67,4 @@
   {% endif %}
 
   {{ feed_icons }}
-</section>
+</div>

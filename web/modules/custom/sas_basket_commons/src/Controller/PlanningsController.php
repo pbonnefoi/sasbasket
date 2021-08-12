@@ -66,6 +66,10 @@ class PlanningsController extends ControllerBase {
         if ($gymnase_id) {
           $start = substr_replace($creneau_value['starthours'], 'H', 2, 0);
           $end = substr_replace($creneau_value['endhours'], 'H', 2, 0);
+          $creneau_value['day'] = $creneau_value['day'] - 1;
+          if ($creneau_value['day'] == -1) {
+            $creneau_value['day'] = 6;
+          }
           $creneaux_sorted[$gymnase_id]['creneaux'][$creneau_value['day']][$creneau_value['starthours']] = [
             'start' => $start,
             'end' => $end,

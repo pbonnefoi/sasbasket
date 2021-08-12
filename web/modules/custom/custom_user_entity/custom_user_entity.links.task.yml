@@ -1,0 +1,26 @@
+# Member entity routing definition
+member_entity.settings_tab:
+  route_name: member_entity.settings
+  title: 'Settings'
+  base_route: member_entity.settings
+
+entity.member_entity.canonical:
+  route_name: entity.member_entity.canonical
+  base_route: entity.member_entity.canonical
+  title: 'View'
+
+entity.member_entity.edit_form:
+  route_name: entity.member_entity.edit_form
+  base_route: entity.member_entity.canonical
+  title: 'Edit'
+
+entity.member_entity.version_history:
+  route_name: entity.member_entity.version_history
+  base_route: entity.member_entity.canonical
+  title: 'Revisions'
+
+entity.member_entity.delete_form:
+  route_name:  entity.member_entity.delete_form
+  base_route:  entity.member_entity.canonical
+  title: Delete
+  weight: 10

@@ -50,3 +50,29 @@ entity.creneau_entity.delete_form:
   base_route:  entity.creneau_entity.canonical
   title: Delete
   weight: 10
+# User entity routing definition
+user_entity.settings_tab:
+  route_name: user_entity.settings
+  title: 'Settings'
+  base_route: user_entity.settings
+
+entity.user_entity.canonical:
+  route_name: entity.user_entity.canonical
+  base_route: entity.user_entity.canonical
+  title: 'View'
+
+entity.user_entity.edit_form:
+  route_name: entity.user_entity.edit_form
+  base_route: entity.user_entity.canonical
+  title: 'Edit'
+
+entity.user_entity.version_history:
+  route_name: entity.user_entity.version_history
+  base_route: entity.user_entity.canonical
+  title: 'Revisions'
+
+entity.user_entity.delete_form:
+  route_name:  entity.user_entity.delete_form
+  base_route:  entity.user_entity.canonical
+  title: Delete
+  weight: 10

@@ -1,4 +1,3 @@
-{% extends "field.html.twig" %}
 {#
 /**
  * @file
@@ -16,6 +15,8 @@
  * @ingroup themeable
  */
 #}
-{%
-  set attributes = attributes.addClass('content')
-%}
+<div class="content is-medium">
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+</div>

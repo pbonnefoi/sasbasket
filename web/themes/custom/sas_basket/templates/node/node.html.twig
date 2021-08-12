@@ -74,13 +74,9 @@
 #}
 <article class="content">
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2 class="is-size-2 is-italic is-uppercase has-text-primary">
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  <h2 class="is-size-2 is-italic is-uppercase has-text-primary">
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  </h2>
 
   {% if display_submitted %}
     <footer>

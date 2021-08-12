@@ -73,13 +73,16 @@
  */
 #}
 <article>
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2 class="is-size-2 is-italic is-uppercase has-text-primary">
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  <h2 class="is-size-2 is-italic is-uppercase has-text-primary">
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  </h2>
+  <div class="container">
+    <section class="section">
+      <div class="content is-large">
+        {{ content.body }}
+      </div>
+    </section>
+  </div>
   <div class="hero">
     <figure class="image is-3by1">
       {% set cover = node.field_image[0].entity.uri.value %}
@@ -88,9 +91,7 @@
   </div>
   <div class="container">
     <section class="section">
-      <div class="content">
-        {{ content }}
-      </div>
+      {{ content.field_modules }}
     </section>
   </div>
   {% if display_submitted %}

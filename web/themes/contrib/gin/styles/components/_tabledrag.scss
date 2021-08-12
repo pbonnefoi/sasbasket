@@ -3,7 +3,7 @@
     float: none;
 
     &:focus::before {
-      box-shadow: 0 0 0 2px var(--colorGinPrimary);
+      box-shadow: 0 0 0 2px var(--colorGinFocus);
     }
   }
 
@@ -21,16 +21,29 @@
 
   .action-link {
     margin-bottom: .5rem;
+
+    .action-link {
+      margin-bottom: 0;
+    }
   }
 }
 
-.tabledrag-handle:after {
-  background-image: none;
-  background-color: var(--colorGinTextLight);
-  mask-image: icon('drag');
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: 16px 16px;
+.tabledrag-handle {
+  &::after {
+    background-image: none;
+    background-color: var(--colorGinTextLight);
+    mask-image: icon('drag');
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: 16px 16px;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1);
+      background-color: var(--colorGinPrimary);
+    }
+  }
 }
 
 .draggable.drag, .draggable.drag:focus {
@@ -43,11 +56,37 @@
 
 .draggable.drag-previous {
   background-color: var(--colorGinLayer2Background);
-  box-shadow: inset 8px 0 0 0 var(--colorGinWarning);
+  box-shadow: inset 6px 0 0 0 var(--colorGinWarning);
 }
 
 .tabledrag-cell-content__item {
   .checkbox-toggle:hover {
     cursor: pointer;
+  }
+}
+
+// Hack to fix border-radius
+.draggable-table thead th {
+  border-radius: $borderDefault;
+
+  &:not(:first-of-type) {
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: $borderDefault;
+      height: $borderDefault;
+      background: var(--colorGinTableHeader);
+      position: absolute;
+      left: -#{$borderDefault / 2};
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
   }
 }

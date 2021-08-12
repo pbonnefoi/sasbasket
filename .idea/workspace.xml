@@ -3,26 +3,137 @@
   <component name="ChangeListManager">
     <list default="true" id="c6a6f454-21ec-422d-9733-5033b8e42a20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/modules/custom/custom_entities/templates/creneau_entity.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/custom_entities/templates/creneau-entity.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/modules/custom/custom_entities/templates/gymnase_entity.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/custom_entities/templates/gymnase-entity.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/.doctrine-project.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/.doctrine-project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/docs/en/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/docs/en/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/AbstractLazyCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/AbstractLazyCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Criteria.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Criteria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/ClosureExpressionVisitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/ClosureExpressionVisitor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/CompositeExpression.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/CompositeExpression.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/ExpressionVisitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/ExpressionVisitor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ExpressionBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ExpressionBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Selectable.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Selectable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/psalm.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/psalm.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.action.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.action.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.menu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.menu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.task.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.task.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.module" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.permissions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.permissions.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/templates/plannings.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/templates/plannings.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/default/files/styles/thumbnail/public/2021-08/images.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--contact.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--drulma-companion-local-tasks-block.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--drulma-companion-local-tasks-block.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/creneau_entity.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/creneau-entity.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-gymnase.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-gymnase.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--media--remote-video.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--media--remote-video.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/default/default.services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/sites/default/default.services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/default/files/languages/fr_Yp5eg90jNygMRNYNQP8Q0-HBV1sIhDfTVLYs-eQS68k.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/default/files/styles/320x240/public/pictures/2021-07/images_0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sites/default/files/styles/medium/public/pictures/2021-07/images_0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/.csscomb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/.github/FUNDING.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/.modernizrrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/.nvmrc" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/.nvmrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/config/install/gin.settings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/config/install/gin.settings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/config/schema/gin.schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/config/schema/gin.schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_accent.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_accent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_ckeditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_ckeditor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_classic_toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_classic_toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_horizontal_toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_horizontal_toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/css/gin_toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_accent.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_accent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/js/gin_toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/dist/media/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/dist/media/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/gin.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/gin.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/gin.install" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/gin.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/gin.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/gin.theme" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/gin.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/js/gin_ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/js/gin_ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/js/gin_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/js/gin_settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/js/gin_toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/js/gin_toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/js/overrides/gin_tableheader.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/js/overrides/gin_tableheader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar-meta/shortcut.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar-meta/shortcut.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/commerce.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/commerce.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/config.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/config.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/content.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/content.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/edit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/edit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/hamburger.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/hamburger.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/tmgmt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/media/icons/toolbar/tmgmt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_action-link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_action-link.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_admin-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_admin-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_claro_improvements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_claro_improvements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_coffee.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_coffee.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_defaults.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_dialog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_dialog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_dropbutton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_dropbutton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_entity_reference_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_entity_reference_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_focus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_focus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_layers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_layers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_layout_node_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_layout_node_form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_media-library.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_media-library.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_messages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_messages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_module-filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_module-filter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_panel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_paragraphs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_paragraphs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_regions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_regions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_status-report.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_status-report.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_system-report.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_system-report.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_tabledrag.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_tabledrag.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_tabs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_throbber.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_throbber.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_title.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_toolbar-meta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_toolbar-meta.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_toolbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_toolbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_update.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_update.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_views.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_views.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_webform.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/components/_webform.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_accent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_accent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_classic_toolbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_classic_toolbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_dialog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_dialog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_horizontal_toolbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_horizontal_toolbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_toolbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/gin_toolbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/helpers/__tools.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/helpers/_svg-sprite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/helpers/_svg-sprite.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/styles/settings/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/styles/settings/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/dataset/table.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/dataset/table.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/form/input--checkbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/form/input--checkbox.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/navigation/menu--toolbar--gin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/navigation/menu--toolbar--gin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/navigation/toolbar--gin--secondary.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/navigation/toolbar--gin--secondary.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/navigation/toolbar--gin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/navigation/toolbar--gin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/node/node-edit-form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/node/node-edit-form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/page/page--node.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/page/page--node.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/templates/page/page.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/templates/page/page.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/tests/src/FunctionalJavascript/GinTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/webpack.config.build.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/webpack.config.build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/webpack.config.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/contrib/gin/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/contrib/gin/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-modules.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/media/media--document.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/media/media--document.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article--teaser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article--teaser.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page-title.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page-title.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/region--footer.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/user/user.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/user/user.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-mini-pager.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-mini-pager.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,83 +149,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/office-hours.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/user/user.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/creneau-entity.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneaux.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="-245" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="75" selection-start-line="75" selection-end-line="77" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--user--user-picture.html.twig">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneau.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-230" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--homepage.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--node--title.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="25" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--teaser.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe--teaser.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1032">
-              <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="27" />
+            <state relative-caret-position="370">
+              <caret line="90" column="10" lean-forward="true" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view-grid.html.twig">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="115">
+              <caret line="76" selection-start-line="76" selection-end-line="78" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="81" column="27" lean-forward="true" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -122,8 +221,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article--teaser.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1191">
-              <caret line="87" column="12" lean-forward="true" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="49" />
+            <state relative-caret-position="300">
+              <caret line="79" column="38" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -132,13 +231,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>console</find>
-      <find>202020</find>
-      <find>23d160</find>
-      <find>develop</find>
-      <find>development.services</find>
-      <find>type</find>
-      <find>revision</find>
       <find>hash</find>
       <find>custo</find>
       <find>hash_salt</find>
@@ -148,7 +240,6 @@
       <find>closed</find>
       <find>$office_hours</find>
       <find>title_classes</find>
-      <find>$creneaux_sorted</find>
       <find>navbar-menu</find>
       <find>fontaw</find>
       <find>creat</find>
@@ -156,12 +247,27 @@
       <find>services.yml</find>
       <find>video_embed_iframe</find>
       <find>attributes</find>
+      <find>$creneaux_sorted</find>
+      <find>classes</find>
+      <find>trans</find>
+      <find>revision_metadata_keys</find>
+      <find>bulma</find>
+      <find>my-</find>
+      <find>day</find>
+      <find>my</find>
+      <find>margin</find>
+      <find>pt</find>
+      <find>col_classes</find>
+      <find>gymnase_entity_field_data</find>
+      <find>installEntityType</find>
+      <find>ConfigEntityType</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web/sites/default</dir>
       <dir>$PROJECT_DIR$/web/sites/default/files/config_qeBT8QvVwf9ldKes8uA3w5WYDI5IZ3wrppJm6lD61tQrAtgPQb46xkE__xTStABvNCcTX9_nIw</dir>
       <dir>$PROJECT_DIR$/web/modules/contrib/office_hours</dir>
       <dir>$PROJECT_DIR$/web/modules/contrib/video_embed_field</dir>
+      <dir>$PROJECT_DIR$/web/modules/custom/custom_entities/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -170,64 +276,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/sites/default/files/config_qeBT8QvVwf9ldKes8uA3w5WYDI5IZ3wrppJm6lD61tQrAtgPQb46xkE__xTStABvNCcTX9_nIw/sync/core.extension.yml" />
-        <option value="$PROJECT_DIR$/web/sites/default/settings.php" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/office-hours.html.twig" />
-        <option value="$PROJECT_DIR$/web/sites/development.services.yml" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.info.yml" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneau.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--image.html.twig" />
-        <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Service/CommonRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/sas_basket_commons.info" />
-        <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/sas_basket_commons.services.yml" />
-        <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Service/CommonRepository.php" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/region--primary-menu.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/html.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--teaser.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.libraries.yml" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/region.html.twig" />
         <option value="$PROJECT_DIR$/web/sites/default/default.services.yml" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/file-link.html.twig" />
         <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/sas_basket_commons.module" />
         <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/sas_basket_commons.routing.yml" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page-title.html.twig" />
-        <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/templates/plannings.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--media--remote-video.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-modules.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/region--footer.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/media/media--document.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--homepage.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article--teaser.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--contact.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--drulma-companion-local-tasks-block.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/user/user.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-gymnase.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/gymnase_entity.html.twig" />
-        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.module" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/gymnase-entity.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/sass/style.scss" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/office-hours.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view-grid.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe--teaser.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneaux.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--user--user-picture.html.twig" />
         <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--node--title.html.twig" />
-        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/paragraphs/paragraph.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--media--remote-video.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/paragraphs/paragraph--fichiers.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/media/media--document.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-modules.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field.html.twig" />
         <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php" />
+        <option value="$PROJECT_DIR$/web/modules/custom/sas_basket_commons/templates/plannings.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--text.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/package.json" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/sass/style.scss" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--homepage.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view-grid.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view.html.twig" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.install" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_user_entity/custom_user_entity.info.yml" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_user_entity/src/Entity/MemberEntity.php" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_user_entity/custom_user_entity.module" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/src/Entity/UserEntity.php" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.permissions.yml" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.task.yml" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.menu.yml" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.action.yml" />
+        <option value="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.module" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/user-entity.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe--teaser.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe.html.twig" />
       </list>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/web/themes/custom/sas_basket/package.json" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="sas-basket.local" id="45199dab-1f79-4746-86b3-35c7a6753ab1" name="sas-basket.local" port="443" />
@@ -339,10 +444,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1920" />
     <option name="y" value="25" />
-    <option name="width" value="1920" />
-    <option name="height" value="1055" />
+    <option name="width" value="1680" />
+    <option name="height" value="943" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -382,26 +486,7 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="sas_basket_commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sas-basket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sas-basket" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="sas_basket_commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sas-basket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sas-basket" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="sas_basket_commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="custom_entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sas-basket" type="b2602c69:ProjectViewProjectNode" />
@@ -423,15 +508,6 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
               <item name="sas_basket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sas-basket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sas-basket" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="sas_basket" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sas-basket" type="b2602c69:ProjectViewProjectNode" />
@@ -482,16 +558,6 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sas-basket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sas-basket" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="sas_basket" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -501,7 +567,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -514,18 +580,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity" />
+      <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/paragraphs" />
       <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field" />
       <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node" />
       <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views" />
-      <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/media" />
-      <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/modules/custom/custom_entities/custom_user_entity/src" />
       <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field" />
       <recent name="$PROJECT_DIR$/web/sites/default" />
       <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/templates" />
       <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket/sass" />
-      <recent name="$PROJECT_DIR$/web/themes/custom/sas_basket" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -553,24 +619,24 @@
       <workItem from="1625665049976" duration="18812000" />
       <workItem from="1626699626521" duration="22694000" />
       <workItem from="1627915868987" duration="18077000" />
-      <workItem from="1628586778338" duration="15463000" />
+      <workItem from="1628586778338" duration="31861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75046000" />
+    <option name="totallyTimeSpent" value="91444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="1680" height="943" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72624797" visible="true" weight="0.2742279" />
-      <window_info id="Structure" order="1" sideWeight="0.273752" side_tool="true" visible="true" weight="0.2742279" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.72625697" visible="true" weight="0.31440783" />
+      <window_info id="Structure" order="1" sideWeight="0.273743" side_tool="true" visible="true" weight="0.31440783" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.35109717" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.39390388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -578,7 +644,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="GraphQL" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.3615465" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" visible="true" weight="0.36449704" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50061053" side_tool="true" weight="0.3985765" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -604,139 +670,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php</url>
-          <line>82</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php</url>
           <line>81</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme</url>
-          <line>54</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme</url>
-          <line>30</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.libraries.yml">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        <state relative-caret-position="306">
+          <caret line="49" selection-start-line="49" selection-end-line="58" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/html.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="78" column="65" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="65" />
-        </state>
+        <state relative-caret-position="-386" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/default/default.services.yml">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/default/settings.local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-337" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/default/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-634" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sites/default/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="55" column="46" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/sas_basket_commons.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/templates/plannings.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page-title.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/sas_basket_commons.routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/file-link.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="27" selection-start-line="27" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--media--remote-video.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/contrib/video_embed_field/templates/video-embed-iframe.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/contrib/video_embed_field/video_embed_field.permissions.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/contrib/video_embed_field/video_embed_field.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/contrib/video_embed_field/video_embed_field.api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/region--primary-menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="855">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -747,203 +703,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/region--footer.html.twig">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="-275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/system/page.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/media/video-embed-iframe.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/media/media--document.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="33" column="85" lean-forward="true" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/block/block--drulma-companion-local-tasks-block.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/templates/plannings.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-exposed-form.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.libraries.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="59" column="12" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        <state relative-caret-position="149">
+          <caret line="187" column="51" selection-start-line="187" selection-start-column="46" selection-end-line="187" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/node_modules/bulma/css/bulma.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="92" selection-start-line="92" selection-end-line="94" selection-end-column="8" />
+        <state relative-caret-position="140">
+          <caret column="170980" selection-start-column="170977" selection-end-column="170980" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="124">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneau.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="39" selection-start-line="39" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-modules.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--text-long.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--text.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-gymnase.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/creneau_entity.page.inc">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/node_modules/bulma/bulma.sass">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.module">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/node_modules/bulma/sass/helpers/_all.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/node_modules/bulma/sass/helpers/spacing.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="285">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="6570" column="1" selection-start-line="6570" selection-start-column="1" selection-end-line="6570" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="228">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--homepage.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view-grid.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="89" column="61" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="61" />
+        <state relative-caret-position="450">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/gymnase_entity.page.inc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_user_entity/src/UserEntityStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-229">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_user_entity/src/UserEntityAccessControlHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/contrib/admin_toolbar/admin_toolbar.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/src/Entity/GymnaseEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_user_entity/custom_user_entity.info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/user_entity.page.inc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_user_entity/src/Entity/MemberEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_user_entity/custom_user_entity.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/src/Entity/UserEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.permissions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.task.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.menu.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.links.action.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Entity/Sql/SqlContentEntityStorageSchema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="2240" column="64" selection-start-line="2240" selection-start-column="52" selection-end-line="2240" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modules/custom/custom_entities/custom_entities.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/user/user.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/user-entity.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/gymnase-entity.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="67" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/creneau-entity.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/entity/gymnase-entity.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneau.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
-        </state>
+        <state relative-caret-position="-230" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/sas_basket.theme">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneaux.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="35" column="71" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="71" />
-        </state>
+        <state relative-caret-position="-245" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/office-hours.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/views/views-view-grid.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        <state relative-caret-position="115">
+          <caret line="76" selection-start-line="76" selection-end-line="78" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article--teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1191">
-          <caret line="87" column="12" lean-forward="true" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="49" />
+        <state relative-caret-position="300">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/user/user.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--article.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--field-creneaux.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--user--user-picture.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/field/field--node--title.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="94">
+          <caret line="75" selection-start-line="75" selection-end-line="77" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe--teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="27" />
+        <state relative-caret-position="370">
+          <caret line="90" column="10" lean-forward="true" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--homepage.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--teaser.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/custom/sas_basket/templates/node/node--equipe.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modules/custom/sas_basket_commons/src/Controller/PlanningsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+        <state relative-caret-position="295">
+          <caret line="81" column="27" lean-forward="true" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
         </state>
       </provider>
     </entry>

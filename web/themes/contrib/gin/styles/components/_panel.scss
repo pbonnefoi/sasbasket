@@ -13,21 +13,22 @@
   padding: 24px;
   margin-top: 0;
   background: var(--colorGinLayer4Background);
-  border-radius: 6px;
+  border: 0 none;
+  border-radius: $borderDefault;
 }
 
 .panel {
-  padding: 16px;
+  padding: 0;
+
+  &__title {
+    margin: .75rem;
+  }
 
   &__content {
-    padding: 8px 16px 0;
+    padding: 0;
   }
 
   .admin-list {
-    margin: 0;
-  }
-
-  .admin-item {
-    padding-left: 2rem;
+    margin: .75rem 0;
   }
 }

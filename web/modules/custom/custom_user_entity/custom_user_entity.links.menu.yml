@@ -1,0 +1,14 @@
+
+# Member entity menu items definition
+entity.member_entity.collection:
+  title: 'Member entity list'
+  route_name: entity.member_entity.collection
+  description: 'List Member entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+member_entity.admin.structure.settings:
+  title: 'Member entity settings'
+  description: 'Configure Member entity entities'
+  route_name: member_entity.settings
+  parent: system.admin_structure

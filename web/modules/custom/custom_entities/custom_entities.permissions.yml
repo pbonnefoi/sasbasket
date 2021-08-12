@@ -60,3 +60,33 @@ delete all creneau entity revisions:
   title: 'Delete all revisions'
   description: 'Role requires permission to <em>view Creneau entity revisions</em> and <em>delete rights</em> for creneau entity entities in question or <em>administer creneau entity entities</em>.'
 
+add user entity entities:
+  title: 'Create new User entity entities'
+
+administer user entity entities:
+  title: 'Administer User entity entities'
+  description: 'Allow to access the administration form to configure User entity entities.'
+  restrict access: true
+
+delete user entity entities:
+  title: 'Delete User entity entities'
+
+edit user entity entities:
+  title: 'Edit User entity entities'
+
+view published user entity entities:
+  title: 'View published User entity entities'
+
+view unpublished user entity entities:
+  title: 'View unpublished User entity entities'
+
+view all user entity revisions:
+  title: 'View all User entity revisions'
+
+revert all user entity revisions:
+  title: 'Revert all User entity revisions'
+  description: 'Role requires permission <em>view User entity revisions</em> and <em>edit rights</em> for user entity entities in question or <em>administer user entity entities</em>.'
+
+delete all user entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view User entity revisions</em> and <em>delete rights</em> for user entity entities in question or <em>administer user entity entities</em>.'

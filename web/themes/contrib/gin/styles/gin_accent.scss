@@ -9,11 +9,11 @@
   --colorGinPrimary: #{$ginPrimary};
   --colorGinPrimaryHover: #{$ginPrimaryHover};
   --colorGinPrimaryActive: #{$ginPrimaryActive};
-  --colorGinPrimaryLight: #{mix(white, $mixColor, 85%)};
-  --colorGinPrimaryLightHover: #{mix(white, $mixColor, 80%)};
-  --colorGinPrimaryLightActive: #{mix(white, $mixColor, 70%)};
-  --colorGinPrimaryLightShadow: #{mix(white, $mixColor, 55%)};
-  --colorGinItemHover: #{rgba($ginPrimary, .06)};
+  --colorGinPrimaryLight: #{rgba($mixColor, .15)};
+  --colorGinPrimaryLightHover: #{rgba($mixColor, .20)};
+  --colorGinPrimaryLightActive: #{rgba($mixColor, .30)};
+  --colorGinPrimaryLightShadow: #{rgba($mixColor, .45)};
+  --colorGinItemHover: #{rgba($ginPrimary, .10)};
   --colorGinButtonShadow: #00000033;
   --colorGinButtonText: #fff;
   --colorGinFocus: #059fad; //#00a590; //#0ba77d; //#2297c7;
@@ -22,13 +22,17 @@
   --colorGinWarning: #d8b234;
   --colorGinWarningLight: #efcf64;
   --colorGinWarningBackground: #{mix(black, #efcf64, 60%)};
+  --colorGinWarningLightBackground: rgba(226, 151, 0, .08);
   --colorGinDanger: #cc3d3d;
   --colorGinDangerLightest: #fdd9d9;
   --colorGinDangerLight: #f39b9d;
   --colorGinDangerBackground: #{mix(black, #dc7f7f, 60%)};
+  --colorGinDangerLightBackground: rgba(222, 117, 96, .1);
   --colorGinGreen: #058260;
   --colorGinGreenLight: #32cea4;
+  --colorGinGreenLightest:  #{mix(white, #32cea4, 60%)};
   --colorGinGreenBackground: #{mix(black, #32cea4, 60%)};
+  --colorGinGreenLightBackground: rgba(72, 171, 123, .1);
   --colorGinInfo: #082538;
   --colorGinInfoLight: #589ac5;
   --colorGinInfoBackground: #{mix(black, #2d6c96, 60%)};
@@ -52,10 +56,10 @@
   --colorGinTextLight: #545560;
 
   --colorGinTableHeader: #e6e8ef;
-  --colorGinSwitch: #26a769;
+  --colorGinSwitch: #26a769; //#0e9888;
   --colorGinSwitchShadow: rgba(38, 167, 105, .3);
 
-  --colorGinIcons: #5d6069; //#646770;
+  --colorGinIcons: #414247; //#5d6069;
   --colorGinStickyBg: #c8cdd8;
 }
 
@@ -64,18 +68,21 @@
   --colorGinPrimary: #{$ginPrimary};
   --colorGinPrimaryHover: #{mix(white, $ginPrimary, 10%)};
   --colorGinPrimaryActive: #{mix(white, $ginPrimary, 15%)};
-  --colorGinPrimaryLight: #{rgba($ginPrimary, .20)};
-  --colorGinPrimaryLightHover: #{rgba($ginPrimary, .25)};
-  --colorGinPrimaryLightActive: #{rgba($ginPrimary, .35)};
-  --colorGinPrimaryLightShadow: #{rgba($ginPrimary, .5)};
+  --colorGinPrimaryLight: #{rgba($ginPrimary, .15)};
+  --colorGinPrimaryLightHover: #{rgba($ginPrimary, .2)};
+  --colorGinPrimaryLightActive: #{rgba($ginPrimary, .3)};
+  --colorGinPrimaryLightShadow: #{rgba($ginPrimary, .45)};
   --colorGinItemHover: #{rgba($ginPrimary, .10)};
   --colorGinButtonShadow: rgba(#111, .9);
   --colorGinButtonText: #111;
   --colorGinFocus: var(--colorGinPrimary); //#19a6b3; //#0ac3ac; //#96eab2; //#5dc0cf; //#32cea4; //#59caf9;
 
-  --colorGinDisabled: #999;
+  --colorGinDisabled: #555;
   --colorGinWarning: #dec15f;
+  --colorGinWarningLightBackground: rgba(222, 193, 95, .1);
   --colorGinDanger: #ce6060;
+  // --colorGinDangerLightBackground: rgba(86, 31, 20, .2);
+
   --colorGinDangerLightest: #483439;
   --colorGinGreen: #32cea4;
   --colorGinInfo: #559bca;
@@ -118,21 +125,22 @@ $ginColors: (
 );
 
 @each $name, $color in $ginColors {
-  [data-gin-accent=#{$name}] {
+  [data-gin-accent=#{'' + $name}] {
     --colorGinPrimary: #{$color};
     --colorGinPrimaryHover: #{mix(black, $color, 15%)};
     --colorGinPrimaryActive: #{mix(black, $color, 25%)};
     --colorGinPrimaryLight: #{rgba($color, .15)};
     @if $name == dark_purple or $name == purple {
-      --colorGinPrimaryLightHover: #{rgba($color, .15)};
+      --colorGinPrimaryLightHover: #{rgba($color, .2)};
       --colorGinPrimaryLightActive: #{rgba($color, .25)};
       --colorGinPrimaryLightShadow: #{rgba($color, .4)};
+      --colorGinItemHover: #{rgba($color, .08)};
     } @else {
-      --colorGinPrimaryLightHover: #{rgba($color, .25)};
-      --colorGinPrimaryLightActive: #{rgba($color, .35)};
-      --colorGinPrimaryLightShadow: #{rgba($color, .5)};
+      --colorGinPrimaryLightHover: #{rgba($color, .2)};
+      --colorGinPrimaryLightActive: #{rgba($color, .3)};
+      --colorGinPrimaryLightShadow: #{rgba($color, .45)};
+      --colorGinItemHover: #{rgba($color, .10)};
     }
-    --colorGinItemHover: #{rgba($color, .06)};
   }
 }
 
@@ -150,14 +158,14 @@ $ginDarkmodeColors: (
 );
 
 @each $name, $color in $ginDarkmodeColors {
-  .gin--dark-mode[data-gin-accent=#{$name}],
-  .gin--dark-mode [data-gin-accent=#{$name}] {
+  .gin--dark-mode[data-gin-accent=#{'' + $name}],
+  .gin--dark-mode [data-gin-accent=#{'' + $name}] {
     --colorGinPrimary: #{$color};
     --colorGinPrimaryHover: #{mix(white, $color, 10%)};
     --colorGinPrimaryActive: #{mix(white, $color, 15%)};
-    --colorGinPrimaryLight: #{rgba($color, .20)};
-    --colorGinPrimaryLightHover: #{rgba($color, .30)};
-    --colorGinPrimaryLightActive: #{rgba($color, .40)};
+    --colorGinPrimaryLight: #{rgba($color, .1)};
+    --colorGinPrimaryLightHover: #{rgba($color, .2)};
+    --colorGinPrimaryLightActive: #{rgba($color, .3)};
     --colorGinItemHover: #{rgba($color, .1)};
   }
 }

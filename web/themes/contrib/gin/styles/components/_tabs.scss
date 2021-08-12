@@ -47,12 +47,21 @@
 .horizontal-tabs ul.horizontal-tabs-list li.horizontal-tab-button a
 {
   color: var(--colorGinText);
+  font-size: .9375rem;
   font-weight: 600;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 
   strong {
     font-weight: inherit;
+  }
+
+  &.is-active {
+    filter: drop-shadow(0 -8px 12px var(--colorGinPrimaryLightHover));
+
+    .gin--dark-mode & {
+      filter: drop-shadow(0 4px 12px var(--colorGinPrimaryLightHover));
+    }
   }
 }
 
@@ -79,8 +88,9 @@
 }
 
 .claro-details__summary {
-  &:after {
+  &::after {
     left: 0;
+    border-radius: $borderDefault;
   }
 
   &:hover {
@@ -96,9 +106,13 @@
 
   @include mq($breakpointSmall) {
     width: 100%;
-    padding: .5rem .5rem 1.5rem;
-    margin-bottom: -1rem;
+    padding: .3125rem .5rem 1.5rem;
+    margin-bottom: -24px;
     overflow-x: auto;
+
+    .gin--edit-form & {
+      padding-top: .4rem;
+    }
   }
 
   &::after {
@@ -111,6 +125,7 @@
     width: 100%;
     max-width: calc(100% + .5rem);
     border-bottom: 1px solid var(--colorGinBorder);
+    transition: $transition;
 
     @include mq($breakpointSmall) {
       left: .5rem;
@@ -118,9 +133,41 @@
       max-width: calc(100% - 1rem);
     }
   }
+
+  .tabs__tab,
+  .horizontal-tab-button {
+    position: relative;
+
+    &:focus-within {
+      &::after {
+        content: "";
+        width: calc(100% + 8px);
+        height: 4px;
+        background: var(--colorGinAppBackground);
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: -4px;
+        z-index: 3;
+      }
+    }
+  }
+
+  .horizontal-tab-button {
+    &:focus-within {
+      &::after {
+        background: var(--colorGinLayerBackground);
+      }
+    }
+  }
 }
 
 .horizontal-tabs ul.horizontal-tabs-list {
+  &::before {
+    z-index: 1;
+    background: var(--colorGinLayerBackground);
+  }
+
   &::after {
     left: .5rem;
     max-width: calc(100% - 1rem);
@@ -135,16 +182,19 @@
   }
 }
 
+.tabs--primary {
+  @include mq($breakpointSmall) {
+    margin-bottom: 0;
+  }
+}
+
 .is-horizontal .tabs--primary {
   @include mq($breakpointSmall) {
     &::after {
-      height: 40px;
-      border-bottom: 1px solid rgba(0, 0, 0, .1);
-      box-shadow: 0 8px 24px -16px rgba(0, 0 ,0, .3);
+      border-bottom: 0 none;
 
       .gin--dark-mode & {
-        border-color: rgba(255, 255, 255, .06);
-        box-shadow: 0 16px 24px -16px rgba(0, 0, 0, 1);
+        border-bottom: 1px solid var(--colorGinBorder);
       }
     }
   }
@@ -152,18 +202,17 @@
   .tabs__link {
     min-height: 3rem;
     height: 100%;
-    border-radius: $borderSmall $borderSmall 0 0;
+    border-radius: $borderDefault $borderDefault 0 0;
 
     @include mq($breakpointSmall) {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
+      padding: 1.25rem 1.5rem 1.5rem;
     }
   }
 }
 
 .is-horizontal .tabs--secondary {
   @include mq($breakpointSmall) {
-    margin-top: .5rem;
+    margin-top: -1rem;
 
     &::before {
       width: 100%;
@@ -172,9 +221,9 @@
 
   .tabs__link {
     min-height: 2.5rem;
-    padding: 0.75rem 1.5rem;
+    padding: .75rem 1.5rem 1rem;
     font-size: .875rem;
-    border-radius: 3px 3px 0 0;
+    border-radius: $borderDefault $borderDefault 0 0;
   }
 }
 
@@ -208,9 +257,9 @@
       a {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
-        border-radius: 2px 2px 0 0;
+        border-radius: $borderDefault $borderDefault 0 0;
 
-        &:before {
+        &::before {
           content: '';
           display: block;
           position: absolute;
@@ -220,7 +269,7 @@
       &.selected a {
         color: var(--colorGinPrimary);
 
-        &:before {
+        &::before {
           z-index: 1;
           border-left: none;
           border-right: none;
@@ -247,6 +296,10 @@
 
     > .details-wrapper {
       margin: 0;
+
+      > .claro-details__description {
+        margin-top: 1rem;
+      }
     }
   }
 }
@@ -317,14 +370,23 @@
   }
 }
 
-.vertical-tabs__menu-link:hover:before {
-  background: var(--colorGinLayer2Background);
-}
+.vertical-tabs {
+  &__menu-item {
+    &::before,
+    &::after {
+      border-color: var(--colorGinBorder);
+    }
+  }
 
-.vertical-tabs__menu-item {
-  &:before,
-  &:after {
-    border-color: var(--colorGinBorder);
+  &__menu-link,
+  &__menu-item.is-selected &__menu-link {
+    &:hover {
+      color: var(--colorGinPrimary);
+
+      &::before {
+        background: var(--colorGinItemHover);
+      }
+    }
   }
 }
 

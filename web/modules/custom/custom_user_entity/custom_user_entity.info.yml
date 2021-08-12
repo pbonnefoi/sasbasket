@@ -1,0 +1,5 @@
+name: 'Custom User Entity'
+type: module
+description: 'Custom User Entity'
+core_version_requirement: ^8.8 || ^9
+package: 'Custom'

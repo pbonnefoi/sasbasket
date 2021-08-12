@@ -13,6 +13,10 @@ function custom_entities_theme() {
       'render element' => 'elements',
       'file' => 'gymnase_entity.page.inc',
     ],
+    'user_entity' => [
+      'render element' => 'elements',
+      'file' => 'user_entity.page.inc',
+    ],
   ];
 
   return $theme;

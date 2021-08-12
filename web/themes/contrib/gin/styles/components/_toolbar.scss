@@ -6,6 +6,7 @@
       .user-menu {
         order: 99;
         flex-grow: 1;
+        flex-shrink: 0;
         text-align: right;
 
         .toolbar-menu {
@@ -68,59 +69,44 @@
     }
 
     // Overrides for default toolbar items
-    .toolbar-icon-admin-toolbar-tools-help,
-    .toolbar-icon-system-admin-content,
-    .toolbar-icon-system-admin-structure,
-    .toolbar-icon-system-themes-page,
-    .toolbar-icon-system-modules-list,
-    .toolbar-icon-system-admin-config,
-    .toolbar-icon-entity-user-collection,
-    .toolbar-icon-system-admin-group,
-    .toolbar-icon-system-admin-reports,
-    .toolbar-icon-help-main,
-    .toolbar-icon-commerce-admin-commerce,
-    .toolbar-icon-tmgmt-admin-tmgmt,
-    .toolbar-icon-escape-admin,
-    .toolbar-icon-edit,
-    .toolbar-icon-local-tasks,
-    .toolbar-icon-menu,
-    .toolbar-icon-shortcut,
-    .toolbar-icon-coffee,
-    .toolbar-icon-devel,
-    .toolbar-icon-rebuild-cache-access,
-    .toolbar-icon-user,
     #toolbar-item-administration-search,
-    .toolbar-tab > .toolbar-icon-edit.toolbar-item {
-      &:before {
-        background-color: var(--colorGinIcons);
-        background-image: none;
+    .toolbar-menu-administration .toolbar-icon,
+    .toolbar-tab > .toolbar-icon-edit.toolbar-item,
+    .toolbar-icon-toggle-vertical,
+    .toolbar-icon-toggle-horizontal {
+      &::before {
+        background: var(--colorGinIcons);
         mask-repeat: no-repeat;
         mask-position: center center;
         mask-size: 18px 18px;
       }
 
-      &:hover:before {
+      &.toolbar-icon-default::before {
+        mask-size: 26px 26px;
+      }
+
+      &:hover::before {
         @include mq($breakpointMedium) {
-          background-color: var(--colorGinTitle);
+          background: var(--colorGinPrimary);
         }
       }
 
-      &.is-active:hover:before {
+      &.is-active:hover::before {
         @include mq($breakpointMedium) {
-          background-color: var(--colorGinPrimary);
+          background: var(--colorGinPrimary);
         }
       }
     }
 
     .menu-item--active-trail {
       .toolbar-icon {
-        &:before {
+        &::before {
           background: var(--colorGinPrimary);
         }
       }
     }
 
-    #toolbar-item-administration-tray a.toolbar-icon-admin-toolbar-tools-help.toolbar-icon-default {
+    #toolbar-item-administration-tray .toolbar-icon-admin-toolbar-tools-help.toolbar-icon-default {
       &:before {
         $logoSize: 28px;
         $iconFill: 333333;
@@ -145,6 +131,13 @@
     .toolbar-icon-default {
       &:before {
         padding-top: 0;
+      }
+    }
+
+    // Fallback icon if none is set
+    .toolbar-icon {
+      &:before {
+        mask-image: icon('fallback');
       }
     }
 
@@ -201,7 +194,6 @@
     .toolbar-icon-system-admin-group {
       &:before {
         mask-image: icon('group');
-        // mask-size: 24px 24px;
       }
     }
 
@@ -223,6 +215,13 @@
     .toolbar-icon-commerce-admin-commerce {
       &:before {
         mask-image: icon('commerce');
+      }
+    }
+
+    // Webform
+    .toolbar-icon-entity-webform-collection {
+      &:before {
+        mask-image: icon('webform');
       }
     }
 
@@ -284,10 +283,30 @@
       }
     }
 
+    // Responsive Preview
+    .responsive-preview-icon {
+      &:before {
+        mask-image: icon('responsive-preview');
+      }
+    }
+
     // User
     .toolbar-icon-user {
       &:before {
         mask-image: icon('user');
+      }
+    }
+
+    // Toggle
+    .toolbar-icon-toggle-vertical {
+      &:before {
+        mask-image: icon('nav-toggle-toleft');
+      }
+    }
+
+    .toolbar-icon-toggle-horizontal {
+      &:before {
+        mask-image: icon('nav-toggle-totop');
       }
     }
   }
@@ -297,7 +316,8 @@
   box-shadow: none;
   border-bottom: 1px solid var(--colorGinBorder);
 
-  a {
+  a,
+  span {
     color: var(--colorGinText);
     font-weight: normal;
 
@@ -307,7 +327,8 @@
   }
 
   .menu-item {
-    &:hover, a:focus {
+    a:hover, a:focus {
+      color: var(--colorGinPrimaryHover);
       background-color: var(--colorGinItemHover);
 
       .toolbar-icon::before {
@@ -323,6 +344,11 @@
       &:hover, a:focus {
         background-color: transparent;
       }
+    }
+
+    // Hide icons for sub-items.
+    .menu-item .toolbar-icon::before {
+      display: none;
     }
 
     a:focus {
@@ -343,13 +369,25 @@
   border-bottom: 1px solid var(--colorGinLayerBorder);
 }
 
+// Fix for Admin_toolbar 2.4+: Remove white borders added by the admin_toolbar module
+.toolbar .toolbar-tray-horizontal {
+  ul ul li.menu-item:first-child {
+    border-top: 0;
+  }
+
+  .menu-item:last-child {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
 .toolbar .toolbar-tray-vertical {
   box-shadow: none;
   border-right: 1px solid var(--colorGinBorder);
   background: var(--colorGinLayerBackground);
 
   .menu-item + .menu-item {
-    border-top: 1px solid var(--colorGinBorder);
+    border-top: 1px solid var(--colorGinLayerBorder);
   }
 
   .menu-item + .menu-item__spacer {
@@ -366,7 +404,7 @@
   }
 
   .level-1.menu-item:last-child {
-    border-bottom: 1px solid var(--colorGinBorder);
+    border-bottom: 1px solid var(--colorGinLayerBorder);
   }
 
   .gin--dark-mode & {
@@ -393,7 +431,7 @@
     li {
       &.menu-item {
         .menu-item {
-          background: var(--colorGinLayerBackground);
+          background: transparent;
           border-left: none;
           border-right: none;
           border-bottom: 0 none;
@@ -437,7 +475,7 @@
 .toolbar .toolbar-menu .toolbar-menu .toolbar-icon.toolbar-handle,
 .toolbar .toolbar-menu .toolbar-menu .toolbar-icon.toolbar-handle.open,
 .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded {
-  &:before {
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -445,16 +483,26 @@
     top: 18px;
     width: 16px;
     height: 16px;
-    background-color: var(--colorGinPrimary);
+    background-color: var(--colorGinDisabled);
     mask-image: icon('handle');
     mask-repeat: no-repeat;
     mask-position: center center;
     mask-size: 14px 14px;
   }
+
+  &.menu-item--active-trail,
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: var(--colorGinPrimary);
+    }
+  }
 }
 
 // Mobile.
-.toolbar .toolbar-tray-vertical .toolbar-menu a {
+.toolbar .toolbar-tray-vertical .toolbar-menu a,
+.toolbar .toolbar-tray-vertical .toolbar-menu span {
+  display: block;
   padding-left: 3.25em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -465,7 +513,7 @@
   }
 
   &:focus {
-    background: var(--colorGinItemHover);
+    background: var(--colorGinPrimaryLight);
   }
 
   &.is-active {
@@ -475,72 +523,46 @@
   }
 }
 
-.toolbar-bar {
-  .toolbar-icon {
-    &.toolbar-icon-menu,
-    &.toolbar-icon-escape-admin,
-    &.toolbar-icon-shortcut,
-    &.toolbar-icon-coffee,
-    &.toolbar-icon-devel,
-    &.toolbar-icon-rebuild-cache-access,
-    &.toolbar-icon-user {
-      &:before {
-        background: none;
-        background-color: rgba(255, 255, 255, .75);
-        mask-repeat: no-repeat;
-        mask-position: center center;
-        mask-size: 18px 18px;
-      }
+.toolbar .toolbar-bar .toolbar-tab > .toolbar-icon {
+  &:before {
+    background: none;
+    background-color: rgba(255, 255, 255, .75);
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: 18px 18px;
+  }
 
-      &:hover:before {
-        @include mq($breakpointMedium) {
-          background-color: var(--colorGinTitle);
-        }
-      }
-
-      &.is-active:before,
-      &.is-active:hover:before {
-        @include mq($breakpointMedium) {
-          background-color: var(--colorGinPrimary);
-        }
-      }
+  &:hover:before {
+    @include mq($breakpointMedium) {
+      background-color: var(--colorGinTitle);
     }
   }
 
-  .toolbar-icon-escape-admin,
-  .toolbar-icon-edit,
-  .toolbar-icon-local-tasks,
-  .toolbar-icon-menu,
-  .toolbar-icon-shortcut,
-  .toolbar-icon-coffee,
-  .toolbar-icon-devel,
-  .toolbar-icon-rebuild-cache-access,
-  .toolbar-icon-user,
-  #toolbar-item-administration-search,
-  .toolbar-tab > .toolbar-icon-edit.toolbar-item {
-    &:hover:before,
-    &.is-active:before {
-      @include mq(max-width $breakpointMedium) {
-        background: #fff;
-      }
+  &.is-active:before,
+  &.is-active:hover:before {
+    @include mq($breakpointMedium) {
+      background-color: var(--colorGinPrimary);
     }
   }
 }
 
-.toolbar-meta .toolbar-bar {
-  .toolbar-icon {
-    &.toolbar-icon-escape-admin,
-    &.toolbar-icon-shortcut,
-    &.toolbar-icon-coffee,
-    &.toolbar-icon-devel,
-    &.toolbar-icon-rebuild-cache-access,
-    &.toolbar-icon-user {
-      &:before {
-        mask-size: 18px 18px;
-        background-color: var(--colorGinIcons);
-      }
+.toolbar-meta .toolbar-bar .toolbar-icon,
+.toolbar-icon-edit,
+.toolbar-icon-menu,
+.toolbar-icon-local-tasks,
+#toolbar-item-administration-search,
+.toolbar-tab > .toolbar-icon-edit.toolbar-item {
+  &:hover:before,
+  &.is-active:before {
+    @include mq(max-width $breakpointMedium) {
+      background: #fff;
     }
   }
+}
+
+.toolbar.toolbar-meta .toolbar-bar .toolbar-tab > .toolbar-icon:before {
+  mask-size: 18px 18px;
+  background-color: var(--colorGinIcons);
 }
 
 // Custom logo
@@ -554,14 +576,6 @@
   }
 }
 
-// Hide logo if accidentially shown in Devel
-.menu-item__tools {
-  .toolbar-icon-admin-toolbar-tools-help,
-  .toolbar-logo {
-    display: none;
-  }
-}
-
 #toolbar-item-user {
   display: inline-block;
   vertical-align: top;
@@ -569,5 +583,13 @@
   &.icon-user {
     padding-left: 0;
     margin-left: 8px;
+  }
+}
+
+// Hide logo if accidentally shown in Devel.
+[data-toolbar-tray="toolbar-item-devel-tray"] {
+  .toolbar-icon-admin-toolbar-tools-help,
+  .toolbar-logo {
+    display: none;
   }
 }

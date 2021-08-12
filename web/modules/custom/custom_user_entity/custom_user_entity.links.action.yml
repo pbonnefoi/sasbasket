@@ -1,0 +1,5 @@
+entity.member_entity.add_form:
+  route_name: entity.member_entity.add_form
+  title: 'Add Member entity'
+  appears_on:
+    - entity.member_entity.collection

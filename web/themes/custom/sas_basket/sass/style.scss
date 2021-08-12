@@ -18,6 +18,29 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 }
 .navbar {
   max-height: 5rem;
+  .navbar-burger {
+    height: 5rem;
+    width: 5rem;
+    &.is-active {
+      span {
+        &:nth-child(1) {
+          transform: translateY(10px) rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: translateY(-9px) rotate(-45deg);
+        }
+      }
+    }
+    span {
+      width: 30px;
+      &:nth-child(1) {
+        top: calc(50% - 10px);
+      }
+      &:nth-child(3) {
+        top: calc(50% + 9px);
+      }
+    }
+  }
   .navbar-brand {
     .navbar-item {
       &:hover {
@@ -49,7 +72,6 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 }
 
 .hero {
-  margin: 1.5rem 0;
   &.is-primary {
     .hero-foot {
       .tabs {
@@ -77,9 +99,14 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 h1 {
   margin-top: 1rem;
 }
-
-.table {
-  table-layout:fixed;
+.table-container {
+  max-width: max-content !important;
+  .table {
+    table-layout:fixed;
+    td, th {
+      min-width: 9rem;
+    }
+  }
 }
 
 #block-sas-basket-tabs {

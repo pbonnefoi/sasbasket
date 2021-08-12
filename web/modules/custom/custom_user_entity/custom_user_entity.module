@@ -1,0 +1,15 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function custom_user_entity_theme() {
+
+  $theme = [
+    'member_entity' => [
+      'render element' => 'elements',
+      'file' => 'member_entity.page.inc',
+    ],
+  ];
+
+  return $theme;
+}
